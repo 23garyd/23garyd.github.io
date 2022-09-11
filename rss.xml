@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gary Ding</title>
+    <description>A personal technical blog for some interesting things in the learning process</description>
+    <link>https://h2o-ac.pages.dev//</link>
+    <atom:link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 11 Sep 2022 08:59:56 +0000</pubDate>
+    <lastBuildDate>Sun, 11 Sep 2022 08:59:56 +0000</lastBuildDate>
+    <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Google Summer Of Code 2022 Python Setup</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Google Summer Of Code Python version setup.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;background&quot;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;The object detection Python library is based on a OpenCV DepthAI python library. It can run on Linux, Windows and OSX platforms. The hardware supports X86_64 and ARM based embedded devices. I used the FRC WPILibrary simulator to test the results of the person detector so that the RoboRIO hardware is not necessary. The detection results will be passed to the simulator or actual RoboRIO by using the FRC WPILibrary NetworkTables components. In addition, I also used Streamlit to create a web-based user interface to adjust various parameters and inputs for the person detector.&lt;/p&gt;
+
+&lt;h3 id=&quot;environment&quot;&gt;Environment&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FRC RoboRIO simulator&lt;/li&gt;
+  &lt;li&gt;Streamlit&lt;/li&gt;
+  &lt;li&gt;Ubuntu 20.04 on X86_64&lt;/li&gt;
+  &lt;li&gt;Python 3.6+&lt;/li&gt;
+  &lt;li&gt;DepthAPI driver&lt;/li&gt;
+  &lt;li&gt;OAK-D camera with USB connected to PC&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;linux-installation&quot;&gt;Linux Installation&lt;/h3&gt;
+
+&lt;p&gt;There are some required dependencies that are needed to be compiled and installed in order to simulate the results on a RoboRIO.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;RoboRio Simulator: Refer &lt;a href=&quot;https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/robot-simulation/introduction.html&quot;&gt;this link&lt;/a&gt; for setup instructions. After a successful installation, the desktop should show a simulator like this.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Streamlit: Refer this link](https://docs.streamlit.io/library/get-started/installation) for installation.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/frc-sim.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DepthAI for Ubuntu, Refer to &lt;a href=&quot;https://docs.luxonis.com/projects/api/en/latest/install/#ubuntu&quot;&gt;this link&lt;/a&gt;) for installation.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git clone https://github.com/luxonis/depthai-python.git
+  cd depthai-python/examples
+  python3 install_requirements.py
+     
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Before starting the program with streamlit, it is important to check to make sure that driver has been installed correctly.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Python-ironoak install and run&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git clone https://github.com/23garyd/python-ironoak.git
+  streamlit persondetector_ui_combo.py
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Make sure the OAK-D is connected with the USB 3 port with the original cable. After starting the program with streamlit, the detection results should appear on the RoboRIO simulator in real time.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/streamlit1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From the RoboRIO simulator, the detection results appear at the bottom of the NetworkTables window, in the row SmartDashboard. The values will update as the position of the detected person moves.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/nt3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        <link>https://h2o-ac.pages.dev/gsoc-python-linux.html</link>
+        <guid isPermaLink="true">https://h2o-ac.pages.dev/gsoc-python-linux.html</guid>
+        
+        <category>Java</category>
+        
+        <category>Python</category>
+        
+        <category>FRC</category>
+        
+        <category>Linux</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Google Summer Of Code 2022 Java Setup</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Google Summer Of Code Java version setup.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;background&quot;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;The object detection Java library is based on a OpenCV DepthAI C++ library. It can run on Linux, Windows and OSX platforms. The hardware supports X86_64 and ARM based embedded devices. I used the FRC WPILibrary simulator to test the results of the person detector so that the RoboRIO hardware is not necessary. The detection results will be passed to the simulator or actual RoboRIO by using the FRC WPILibrary NetworkTables components.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/frc-robo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;environment&quot;&gt;Environment&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FRC RoboRIO simulator&lt;/li&gt;
+  &lt;li&gt;Ubuntu 20.04 on X86_64&lt;/li&gt;
+  &lt;li&gt;Oracle Java 8 SDK&lt;/li&gt;
+  &lt;li&gt;Maven 3.6.3&lt;/li&gt;
+  &lt;li&gt;DepthAPI driver&lt;/li&gt;
+  &lt;li&gt;OAK-D camera with USB connected to PC&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;linux-installation&quot;&gt;Linux Installation&lt;/h3&gt;
+
+&lt;p&gt;There are some required dependencies that are needed to be compiled and installed in order to simulate the results on a RoboRIO.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;RoboRIO Simulator: Refer to  &lt;a href=&quot;https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/robot-simulation/introduction.html&quot;&gt;this link&lt;/a&gt; for setup instructions. After a successful installation, the simulator should resemble the following:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/frc-sim.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;JavaCpp for DepthAI: Refer to  &lt;a href=&quot;https://github.com/bytedeco/javacpp-presets&quot;&gt;this link&lt;/a&gt; for build steps.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  cd javacpp-presets
+  mvn install --projects .,depthai
+  cd javacpp-presets/depthAI/platform
+  mvn clean install -Djavacpp.platform.host
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;After the above steps are complete, a depthai-platform.jar will be created and installed in the maven repository.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;WPILibrary NetworkTable component
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Since the version that I used has been removed from the maven repository, manual installation is necessary.  To begin, download the NetworkTables library from &lt;a href=&quot;https://first.wpi.edu/FRC/roborio/maven/development/edu/wpi/first/wpilib/networktables/java/NetworkTables/3.1.7-20170802171912-5-gf43675e/NetworkTables-3.1.7-20170802171912-5-gf43675e-desktop.jar&quot;&gt;this link&lt;/a&gt;.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Start a terminal and cd to the path where the jar file was saved. Once complete, run the below command to install this jar to the maven repository.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  mvn install:install-file -Dfile=./NetworkTables-3.1.7-20170802171912-5-gf43675e-desktop.jar  -DgroupId=edu.wpi.first.wpilib.networktables.java -DartifactId=NetworkTables -Dversion=3.1.7 -Dpackaging=jar
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;java-ironoak install and run&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git clone https://github.com/23garyd/java-ironoak.git
+  mvn clean install
+  mvn compile exec:java
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Make sure that the Oak-D is connected with the USB 3 port using the original cable. 
+From the RoboRIO simulator, the person detector’s results have been passed  to the NetworkTables window, and should display the values for when a person has been detected.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/nt3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        <link>https://h2o-ac.pages.dev/gsoc-java-linux.html</link>
+        <guid isPermaLink="true">https://h2o-ac.pages.dev/gsoc-java-linux.html</guid>
+        
+        <category>Java</category>
+        
+        <category>Python</category>
+        
+        <category>FRC</category>
+        
+        <category>Linux</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Google Summer Of Code 2022 Report</title>
+        <description>&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Over the past three months, I have had the valuable opportunity of contributing to an OpenCV open source project as a part of GSoC 2022. The main goal of this project was to create a cost-effective vision system for teams competing in the FIRST Robotics Competition by using the OpenCV DepthAI/OAK-D platform. Through this project, OAK-D can begin to be part of a solution to reduce build time by providing a generic and proven vision solution for all types of robots.&lt;/p&gt;
+
+&lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Task 1: Create a new abstraction layer in FRC for person tracking and distance.&lt;/li&gt;
+  &lt;li&gt;Task 2: Create a new abstraction layer in FRC for object tracking and distance.&lt;/li&gt;
+  &lt;li&gt;Task 3: Create a new abstraction layer for AprilTag and ArUco tag homography.&lt;/li&gt;
+  &lt;li&gt;Task 4: Provide a way to simplify the calibration process/auto calibration.&lt;/li&gt;
+  &lt;li&gt;Task 5: Create a new abstraction layer for object identification.&lt;/li&gt;
+  &lt;li&gt;Task 6: Create a new process to have the training environment easily usable and consumable models from community.&lt;/li&gt;
+  &lt;li&gt;Task 7: Create documentation and tutorial on using this FRC software package.&lt;/li&gt;
+  &lt;li&gt;Task 8: Create documentation and tutorial on tuning a model and uploading to OAK-D.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;During the working period, I started by mainly focusing my assigned work on person tracking and distance. When I had met this goal, I worked with my mentors and moved onto completing the other goals that built off of this initial step, such as simplifying the training environment and documenting the setup instructions. This way, the full start-to-end toolkit that I had created with the person detector could be applied to the other abstraction layers as well.
+Project Description #&lt;/p&gt;
+
+&lt;h2 id=&quot;development-environment&quot;&gt;Development Environment&lt;/h2&gt;
+
+&lt;h3 id=&quot;oak-d-depthai&quot;&gt;Oak-D DepthAI&lt;/h3&gt;
+
+&lt;p&gt;DepthAI is the Embedded, Performant, Spatial AI+CV platform, composed of an open-source hardware, firmware, software ecosystem that provides turnkey embedded Spatial AI+CV and hardware-accelerated computer vision. OAK was developed, which is a modular, open-source ecosystem composed of MIT-licensed hardware, software, and AI training. Oak-D is the stereo camera which runs the DepthAI. FRC lacks advanced vision-based solutions including the open source software and hardware that can be quickly adopted by developers.  The proposal is to create a package for the OAK-D camera for FRC.  Beyond that, the package can be used by any mobile robot to quickly implement vision based tasks&lt;/p&gt;
+
+&lt;h3 id=&quot;javacpp-presets&quot;&gt;JavaCpp-Presets&lt;/h3&gt;
+
+&lt;p&gt;The JavaCPP Presets modules contain Java configuration and interface classes for widely used C/C++ libraries. It provides efficient access to native C++ inside Java, not unlike the way some C/C++ compilers interact with assembly language. Since the DepthAI that was used for this project was created with C++ language, in order to create a Java version, we need to use a Java CPP glue layer which is what Java-Cpp is about.&lt;/p&gt;
+
+&lt;h3 id=&quot;frc-roborio-simulation&quot;&gt;FRC RoboRio Simulation&lt;/h3&gt;
+
+&lt;p&gt;RoboRio Simulation is a desktop tool designed to help developers  test FRC robot code. The simulator allows developers to test their robot code without the need for a physical robot or the RoboRIO component.  It fully supports the FRC WPILibrary in Java.&lt;/p&gt;
+
+&lt;h3 id=&quot;streamlit&quot;&gt;Streamlit&lt;/h3&gt;
+&lt;p&gt;Streamlit is an open source app framework in the Python language. It helps us create web apps for data science and machine learning in a short time. For this project, we used Streamlit to create a web-based user interface for teams to adjust parameters for the vision pipeline.&lt;/p&gt;
+
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
+
+&lt;h3 id=&quot;the-python-implementation-with-test-gui&quot;&gt;The Python Implementation with test GUI&lt;/h3&gt;
+&lt;p&gt;The DepthAI platform has low level functions for object detection and depth calculation but these examples are separate programs. Developers will need to understand the details and gist of how object and depth detection works in order to put them together. In the first phase of the working period, I spent time familiarizing myself with the depths of this code. Afterwards, I created two separate programs for detection based off of input, which was either a live feed from the OAK-D camera or a video from a file. In my initial iterations, I created an asynchronous detection process with the use of a long running thread. This worked in some cases but not all. Based on mentor feedback, I created a synchronous call instead so that once a person is detected, then at that point a result will be returned. The result of the pipeline includes values such as a boolean statement, bounding box coordinates, and depth. 
+Once the initial detection networks were functioning, I created a web-based UI through streamlit to simplify the process of fine-tuning parameters to alter the result. With a web-based UI, developers can tune the pipeline regardless of their operating system. I added functionalities that included specifying the pipeline input, model file, confidence threshold, and a live display. 
+Finally, I made it possible to return the results from the python code to the robot using the FRC WPILibrary NetworkTables function, which is a distributed message bus so that other software components can read the results, even if these components are in different processors.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-java-implementation-with-roborio-simulator&quot;&gt;The Java Implementation with RoboRio Simulator&lt;/h3&gt;
+&lt;p&gt;Due to the large number of FRC teams that have Java as their preferred programming language, I felt that it was necessary to add Java support for this project as I was finishing up my Python code. However, the Java implementation was quite an involved process.  Since DepthAI does not have a Java library, this work would have had to be done based on low-level code from the C++ library. Thankfully, there is an open-source project, JavaCPP-Presets, which provides some form of a JNI-layer wrapper for some common C++ components. I modified the JavaCPP to create a depthAI jar wrapper and then ported my person detection Python code to Java. Through unit testing, I made sure that this process was successful. 
+Then, I utilized NetworkTables from the FRC WPILibrary in order to use the outputs from the pipeline as input to the RoboRIO processor found on FRC robots, so that teams can use the results for positioning or other judgements. Since I didn’t have access to the RoboRIO hardware, I chose to install and use a FRC RoboRIO simulator which can mimic the NetworkTables function. With the setup complete, I tested the Java code with a OAK-D and this simulator and it worked as expected.&lt;/p&gt;
+
+&lt;h2 id=&quot;commits&quot;&gt;Commits&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;python-ironoak  &lt;a href=&quot;https://github.com/23garyd/python-ironoak&quot;&gt;python-ironoak &lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;https://github.com/prasannavk/python-ironoak/pull/4/commits&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;java-ironoak &lt;a href=&quot;https://github.com/23garyd/java-ironoak&quot;&gt;java-ironoak &lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;https://github.com/23garyd/java-ironoak/commits/main&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;video-links&quot;&gt;Video Links&lt;/h2&gt;
+
+&lt;p&gt;Python FRC demo&lt;/p&gt;
+&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/kZoewUklqjo&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Java FRC demo&lt;/p&gt;
+&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/Er9NpnCAC9k&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+</description>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        <link>https://h2o-ac.pages.dev/tech/gsoc-2022-report.html</link>
+        <guid isPermaLink="true">https://h2o-ac.pages.dev/tech/gsoc-2022-report.html</guid>
+        
+        <category>Java</category>
+        
+        <category>Python</category>
+        
+        <category>FRC</category>
+        
+        <category>Linux</category>
+        
+        
+        <category>tech</category>
+        
+      </item>
+    
+  </channel>
+</rss>

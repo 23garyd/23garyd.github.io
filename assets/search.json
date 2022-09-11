@@ -1,0 +1,21 @@
+[
+  
+    {
+      "title"    : "Google Summer Of Code 2022 Python Setup",
+      "tags"     : "Java Python FRC Linux",
+      "url"      : "/gsoc-python-linux.html"
+    } ,
+  
+    {
+      "title"    : "Google Summer Of Code 2022 Java Setup",
+      "tags"     : "Java Python FRC Linux",
+      "url"      : "/gsoc-java-linux.html"
+    } ,
+  
+    {
+      "title"    : "Google Summer Of Code 2022 Report",
+      "tags"     : "Java Python FRC Linux",
+      "url"      : "/tech/gsoc-2022-report.html"
+    } 
+  
+]
