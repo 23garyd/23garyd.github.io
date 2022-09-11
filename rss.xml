@@ -5,8 +5,8 @@
     <description>A personal technical blog for some interesting things in the learning process</description>
     <link>https://h2o-ac.pages.dev//</link>
     <atom:link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 11 Sep 2022 09:13:47 +0000</pubDate>
-    <lastBuildDate>Sun, 11 Sep 2022 09:13:47 +0000</lastBuildDate>
+    <pubDate>Sun, 11 Sep 2022 09:16:39 +0000</pubDate>
+    <lastBuildDate>Sun, 11 Sep 2022 09:16:39 +0000</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -217,13 +217,13 @@ Project Description #&lt;/p&gt;
 Once the initial detection networks were functioning, I created a web-based UI through streamlit to simplify the process of fine-tuning parameters to alter the result. With a web-based UI, developers can tune the pipeline regardless of their operating system. I added functionalities that included specifying the pipeline input, model file, confidence threshold, and a live display. 
 Finally, I made it possible to return the results from the python code to the robot using the FRC WPILibrary NetworkTables function, which is a distributed message bus so that other software components can read the results, even if these components are in different processors.&lt;/p&gt;
 
-&lt;p&gt;Refer to  &lt;a href=&quot;http://localhost:4000/gsoc-python-linux.html&quot;&gt;this link&lt;/a&gt; for setup instructions.&lt;/p&gt;
+&lt;p&gt;Refer to  &lt;a href=&quot;https://23garyd.github.io/gsoc-python-linux.html&quot;&gt;this link&lt;/a&gt; for setup instructions.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-java-implementation-with-roborio-simulator&quot;&gt;The Java Implementation with RoboRio Simulator&lt;/h3&gt;
 &lt;p&gt;Due to the large number of FRC teams that have Java as their preferred programming language, I felt that it was necessary to add Java support for this project as I was finishing up my Python code. However, the Java implementation was quite an involved process.  Since DepthAI does not have a Java library, this work would have had to be done based on low-level code from the C++ library. Thankfully, there is an open-source project, JavaCPP-Presets, which provides some form of a JNI-layer wrapper for some common C++ components. I modified the JavaCPP to create a depthAI jar wrapper and then ported my person detection Python code to Java. Through unit testing, I made sure that this process was successful. 
 Then, I utilized NetworkTables from the FRC WPILibrary in order to use the outputs from the pipeline as input to the RoboRIO processor found on FRC robots, so that teams can use the results for positioning or other judgements. Since I didn’t have access to the RoboRIO hardware, I chose to install and use a FRC RoboRIO simulator which can mimic the NetworkTables function. With the setup complete, I tested the Java code with a OAK-D and this simulator and it worked as expected.&lt;/p&gt;
 
-&lt;p&gt;Refer to  &lt;a href=&quot;http://localhost:4000/gsoc-java-linux.html&quot;&gt;this link&lt;/a&gt; for setup instructions.&lt;/p&gt;
+&lt;p&gt;Refer to  &lt;a href=&quot;https://23garyd.github.io/gsoc-java-linux.html&quot;&gt;this link&lt;/a&gt; for setup instructions.&lt;/p&gt;
 
 &lt;h2 id=&quot;commits&quot;&gt;Commits&lt;/h2&gt;
 &lt;ul&gt;
