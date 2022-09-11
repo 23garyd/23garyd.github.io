@@ -11,6 +11,7 @@ tags:
 - Python 
 - FRC
 - Linux
+pin: true
 ---
 
 > Google Summer Of Code Java version setup.
