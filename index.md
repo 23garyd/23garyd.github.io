@@ -1,33 +1,37 @@
 ---
 layout: page
 home-title: Gary Ding 
-description: Technology to help Our Environment
-cover: 'https://images.unsplash.com/photo-1649771482867-21eaffe6fcd0'
+description: Environmental Maker (In Progress)
+cover: '/assets/img/garyding_bk5.jpg'
 cover_author: 'Colin + Meg'
 cover_author_link: 'https://unsplash.com/@colinandmeg'
 ---
 
 # About me
 
-&emsp;&emsp;I am a 12th student from Harker. I have 8 years in Robot development. I am interested in using Robot to help our environment.
+&emsp;&emsp;Hello! I'm Gary, and I'm a 17 year old from San Jose, California. I am a 12th grade student currently studying at Harker. Six years ago, I first started playing with robots. Six years later, I have designed and built competition bots with friends at school, worked on my own personal projects, and worked with professionals in the industry to fulfill their robotic needs. My work revolves around finding ways to use my skills in CAD design, coding, and mechanical fabrication to alleviate environmental ills. Feel free to take a look at what I've done in this site! 
 
 # Internships
 
-1. **Futuredial Inc.** - The market leader company to automate the renewable electronics. I worked on 6-DOF Robot Simulation and Control with Optimized Path Algorithm. 
-2. **OpenCV Org** -  Farm Robot Open Source Project software control with ROS and Python.
+1. [**Futuredial Universal Robot Automation**](tech/fd-ur5-part1.html) - The market leading company that provides robot automation solutions for renewable electronics. I worked on a 6-DOF Robot Simulation and software control with an Optimized Path Algorithm and Computer Vision. 
+2. [**OpenCV Ironoak Library**](tech/gsoc-2022-report.html) -  Through Google's Summer of Code program, I worked with developers from OpenCV to create a computer vision toolkit for FRC robotics teams with Python, Java and Linux.
 
 
 # Projects
 
-1. Google Summer Of Code 2022 
-2. OpenCV Farm Robot Open Source Project
-3. FRC in Harker
-4. FTC in 11311
+1. [OpenCV Farm Robot](tech/opencv-rover-part1.html)
+2. [Smart Sorting Trash Can](tech/trashcan-makerfair.html)
+
+
+# Robotics Teams
+
+1. [**FIRST Robotics Competition**](tech/ftc-11311.html) - FRC 1072 Harker Robotics, Mechanical Lead
+2. [**FIRST Tech Challenge**](tech/ftc-11311.html) - FTC 11311 Team Paragon, Vice Captain
 
 # Skills
 
 - Java, Python
-- RoboDK, Universal Robot Script,
+- RoboDK simulation, Universal Robot Script
 - Pixhawk, Ardupilot, Robot Kinematics 
 - OpenCV , TensorFlow/Neural Network
 

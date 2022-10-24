@@ -70,3 +70,7 @@ From the RoboRIO simulator, the detection results appear at the bottom of the Ne
 
 ![](/assets/img/nt3.png)
 
+## Video Links
+
+Python FRC demo
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/kZoewUklqjo" frameborder="0"></iframe>

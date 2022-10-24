@@ -77,3 +77,9 @@ Make sure that the Oak-D is connected with the USB 3 port using the original cab
 From the RoboRIO simulator, the person detector's results have been passed  to the NetworkTables window, and should display the values for when a person has been detected.
 
 ![](/assets/img/nt3.png)
+
+
+## Video Links
+
+Java FRC demo
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/Er9NpnCAC9k" frameborder="0"></iframe>
