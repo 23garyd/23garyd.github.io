@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Trash Can - Gary Ding</title>
+    <meta name="author"  content="gary ding">
+    <meta name="description" content="Intelligent Trash Can">
+    <meta name="keywords"  content="Python, Linux">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Intelligent Trash Can - Gary Ding">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://h2o-ac.pages.dev/tech/trashcan-makerfair.html">
+    <meta property="og:baseurl" content="">
+    <meta property="og:description" content="A personal technical blog for some interesting things in the learning process">
+    <meta property="og:site_name" content="Gary Ding">
+    <meta property="og:gray" content="false">
+    
+    <meta property="og:previous_url" content="/tech/ftc-11311.html">
+    
+    
+    <meta property="post-date-format" content="0">
+    
+    <meta property="post-date" content="2019-05-15 00:00:00 +0000" />
+    
+    
+    <meta name="theme-color" content="#81BBFF" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/assets/img/touch/apple-touch-icon.png"/>
+    <link rel="Shortcut Icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.min.css" />
+    <link rel="stylesheet" href="https://github.com/pages-themes/cayman/blob/master/assets/css/style.scss" />
+    <link rel="stylesheet" href="/assets/css/plugins.min.css" />
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-light.min.css" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/plugins/line-numbers/prism-line-numbers.min.css">
+    
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.css" />
+    <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+</head>
+
+
+
+<body class="line-numbers" ontouchstart="">
+
+
+  <!--[if lt IE 10]>
+  <div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+  <![endif]-->
+  
+  <div id="all" class="post">
+  
+    <div class="alert-tip" id="no-previous">
+      
+      已经是最新一篇文章了！
+      
+    </div>
+    <div class="alert-tip" id="no-next">
+      
+      已经是最后一篇文章了！
+      
+    </div>
+    <input id="nm-switch" type="hidden" value="false"> <header class="g-header">
+    <div class="g-logo">
+      <a href="/" aria-label="logo"></a>
+    </div>
+    <!-- <i id="menu-toggle" class="iconfont icon-menu"></i> -->
+    <div id="mode-toggle">
+        <svg class="icon icon-day" aria-hidden="true">
+            <use xlink:href="#icon-day"></use>
+        </svg>
+        <svg class="icon icon-night" aria-hidden="true">
+            <use xlink:href="#icon-night"></use>
+        </svg>
+    </div>
+    <svg id="menu-toggle" class="icon-menu" aria-hidden="true">
+        <use xlink:href="#icon-menu"></use>
+    </svg>
+    <nav class="g-nav">
+        <ul>
+            
+                
+                <li>
+                    <a href="/" aria-label="home">
+                        home
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/blog/index.html" aria-label="blog">
+                        blog
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/archives.html" aria-label="archives">
+                        archives
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/tags.html" aria-label="tags">
+                        tags
+                    </a>
+                </li>
+                
+            
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle"> about </a>
+                    <ul class="dropdown-menu">
+                    
+                        <li>
+                            <a href="/logs.html" aria-label="logs">
+                                logs
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/tos.html" aria-label="tos">
+                                tos
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/cv.html" aria-label="CV">
+                                CV
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/links.html" aria-label="links">
+                                links
+                            </a>
+                        </li>
+                    
+                    </ul> 
+                </li>
+                
+            
+            <li class="mode">
+                <svg class="icon day" aria-hidden="true">
+                    <use xlink:href="#icon-day"></use>
+                </svg>
+                <svg class="icon night" aria-hidden="true">
+                    <use xlink:href="#icon-night"></use>
+                </svg>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+    <header
+      class="g-banner post-header post-pattern-circuitBoard bgcolor-default "
+      data-theme="default"
+    >
+      <div class="post-wrapper">
+        <div class="post-tags">
+          
+            
+              <a href="/tags.html#Python" class="post-tag">Python</a>
+            
+              <a href="/tags.html#Linux" class="post-tag">Linux</a>
+            
+          
+        </div>
+        <h1>Intelligent Trash Can</h1>
+        <div class="post-meta">
+          <span class="post-meta-item">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-user"></use>
+            </svg>
+            Gary Ding
+          </span>
+          <time class="post-meta-item" datetime="19-05-15">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-calendar"></use>
+            </svg>
+            <span class="create-at"></span>
+          </time>
+          <time class="post-meta-item" datetime="19-05-15">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-update"></use>
+            </svg>
+            <span class="update-at"></span>
+          </time>
+          
+            <span class="post-meta-item">
+              <svg class="icon words" aria-hidden="true">
+                <use xlink:href="#icon-words"></use>
+              </svg>
+              
+              Total size  11.2k  words
+            </span>
+            <span class="post-meta-item">
+              <svg class="icon time" aria-hidden="true">
+                <use xlink:href="#icon-time"></use>
+              </svg>
+              Time to read is 32 minutes
+            </span>
+            
+              <span class="post-meta-item">
+                <svg class="icon pv" aria-hidden="true">
+                  <use xlink:href="#icon-pv"></use>
+                </svg>
+                Total viewed  <span id="busuanzi_value_page_pv"></span> times 
+              </span>
+            
+          
+          
+            <span class="post-meta-item">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-image"></use>
+              </svg>
+             
+            </span>
+          
+        </div>
+      </div>
+      
+      <div class="filter"></div>
+        <div class="post-cover" style="background: url('/assets/img/gary-trash1.jpg') center no-repeat; background-size: cover;"></div>
+      
+    </header>
+    <div class="post-content visible">
+      
+      <h2 class="post-subtitle">AI Vision-based Trash Classification</h2>
+      
+
+      
+      <div class="container">  
+        <div class="contents">
+          <article class="markdown-body">
+            <h2 id="overview">Overview</h2>
+
+<p>This project began as a school science fair project. A couple classmates and I noticed that we only had one type of trash bin at school, which meant that recyclable items were not being sorted out and properly disposed of. I came up with the idea of a trash can that would sort trash by itself.</p>
+
+<p>At home, we had a trash can with one of those motion-activated lids that had stopped working, which I thought would be perfect for this project. I fixed up the lid by taking it apart and replacing the motor, which had become corroded probably due to liquid in the bin. 
+Now I could begin making.</p>
+
+<p><img src="/assets/img/gary-trash-makerfair.png" alt=""></p>
+
+<p><img src="/assets/img/gary-trash1.jpg" alt=""></p>
+
+<p><img src="/assets/img/gary-trash2.jpg" alt=""></p>
+
+<p><img src="/assets/img/gary-trash3.jpg" alt=""></p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p><img src="/assets/img/gary-trash-design.png" alt=""></p>
+
+<p>In order to sort the trash, the bin would first have to know what item it was dealing with. The best way would be to use a camera equipped with object detection. By using a polycarbonate platform, the object could be placed in an isolated location to undergo object detection prior to sorting. I thought that the platform could be dual purpose, as it could tilt to release the item into either side of the bin, which I later separated into landfill and recycling sides. A 20kg digital servo and some brackets that I had snagged from my robotics team were adequate in supplying the rotational motion of the flap.</p>
+
+<p>To control the servo from my Raspberry Pi, I would need external power and wiring via a breadboard. However, the Adafruit HAT has external power supply socket so it can power the servo directly.  Adafruit also provides some Python example code of how to use it , which was very straightforward to follow.</p>
+
+<p>As for the Pi, I was considering between different operating systems to use for this project. Raspbian Jessie is a good choice: it comes with python3.4 and it is not too outdated.</p>
+
+<p>Originally, my bin functioned by snapping a photo of the trash item inside using an external Pi camera, sending it off to a deep learning computer vision site called Clarifai.ai, and using the outputs from there to determine the type of trash. This worked out in terms of reliability and accuracy, so I stuck with it for a while. However, behind the scenes, I was using a free trial plan from them, meaning that I could only submit up to 500 photos on an account. So between different demos, I was always busy creating loads of new accounts in order for my bin to work.</p>
+
+<p>Later, I found that I could use a Nvidia Jetson TX1 as a CPU for my bin.</p>
+
+<p>Advantages:</p>
+<ul>
+  <li>Training and inference can be much faster. Instead of using someone else’s algorithm, I’m using my own.</li>
+  <li>Servo can share same hardware and python libary</li>
+  <li>Much more Machine learning libary package support such as keras, easier to solve issue</li>
+  <li>Better learning platform than RP3 for ML related. Good for doing other projects in future such as vehicle, autonomous drive, robots, etc</li>
+  <li>Can use CSI camera for fast and  robust processing in future
+Disadvantages:</li>
+  <li>The servo hat will not be compatible with PIN in TX1.  The servo board needs to use a jumper to connect to TX1.</li>
+</ul>
+
+<p><img src="/assets/img/paper.png" alt=""></p>
+
+<p><img src="/assets/img/plastic.png" alt=""></p>
+
+<p>Here is the code to training code from the TX1</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mobilenet_training.py
+Long ago
+Feb 15, 2019
+
+You uploaded an item
+Text
+mobilenet_training.py
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
+import argparse
+import matplotlib as mpl
+
+mpl.use('TkAgg')
+import matplotlib.pyplot as plt
+import os
+import sys
+import glob
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split  # 0.18
+#from sklearn.cross_validation import train_test_split
+from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score, cohen_kappa_score, roc_auc_score, \
+    roc_curve
+from collections import Counter
+from sklearn.utils import class_weight
+
+from keras.applications.mobilenet import preprocess_input, MobileNet
+from keras.models import Model, load_model
+from keras.layers import Dense, GlobalAveragePooling2D
+from keras.preprocessing import image
+from keras.optimizers import SGD
+
+IM_WIDTH, IM_HEIGHT = 224, 224
+NB_EPOCHS = 1
+BAT_SIZE = 32
+
+
+def get_images(paths):
+    images = []
+    for path in paths:
+        img = image.load_img(path, target_size=(224, 224))
+        x = image.img_to_array(img)
+        # x = np.expand_dims(x, axis=0)
+        x = preprocess_input(x)
+        images.append(x)
+
+    return np.asarray(images)
+
+
+def one_hot_encoding(labels):
+    labels = pd.Series(labels).str.get_dummies()
+
+    return labels
+
+
+def split(files):
+    X_train, X_test = train_test_split(files, test_size=0.20, random_state=42)
+    X_train, X_valid = train_test_split(
+        X_train, test_size=0.10, random_state=42)
+
+    return X_train, X_test, X_valid
+
+
+def get_labels(data_paths):
+    labels = []
+    for path in data_paths:
+        labels.append(os.path.basename(os.path.dirname(path)))
+
+    return labels
+
+
+def fine_tune(model):
+    for layer in model.layers[:95]:
+        layer.trainable = False
+    for layer in model.layers[95:]:
+        layer.trainable = True
+
+    model.compile(
+        optimizer=SGD(lr=0.0001, momentum=0.9),
+        loss='categorical_crossentropy',
+        metrics=['accuracy'])
+
+
+def get_data_paths():
+    data_folders = glob.glob(os.path.join('data', '*'))
+
+    train_paths = []
+    test_paths = []
+    valid_paths = []
+
+    for folder in data_folders:
+        files = glob.glob(os.path.join(folder, '*.jpg'))
+        train, test, valid = split(files)
+
+        train_paths = train_paths + train
+        test_paths = test_paths + test
+        valid_paths = valid_paths + valid
+
+    np.random.shuffle(train_paths)
+    np.random.shuffle(test_paths)
+    np.random.shuffle(valid_paths)
+
+    return np.asarray(train_paths), np.asarray(test_paths), np.asarray(
+        valid_paths)
+
+
+def add_new_last_layer(base_model, nb_classes):
+    """Add last layer to the convnet
+    Args:
+        base_model: keras model excluding top
+        nb_classes: # of classes
+    Returns:
+        new keras model with last layer
+    """
+    x = base_model.output
+    x = GlobalAveragePooling2D()(x)
+    x = Dense(128, activation='relu')(x)  # new FC layer, random init
+    x = Dense(32, activation='relu')(x)  # new FC layer, random init
+    predictions = Dense(
+        nb_classes, activation='softmax')(x)  # new softmax layer
+    model = Model(inputs=base_model.input, outputs=predictions)
+    return model
+
+
+def setup_to_transfer_learn(model, base_model):
+    """Freeze all layers and compile the model"""
+    for layer in base_model.layers:
+        layer.trainable = False
+    model.compile(
+        optimizer='adam',
+        loss='categorical_crossentropy',
+        metrics=['accuracy'])
+
+
+def train(args):
+    import ipdb;
+    #ipdb.set_trace()
+    nb_classes = 6
+    nb_epoch = int(args.nb_epoch)
+    batch_size = int(args.batch_size)
+
+    train_paths, test_paths, valid_paths = get_data_paths()
+
+    print(f"No. of Train samples = {len(train_paths)} \n")
+    print(f"No. of Test samples = {len(test_paths)} \n")
+    print(f"No. of Valid samples = {len(valid_paths)} \n")
+
+    train_labels = get_labels(train_paths)
+    print(f'For Train = {Counter(train_labels)} \n')
+    train_labels = np.asarray(one_hot_encoding(train_labels))
+
+    test_labels = get_labels(test_paths)
+    print(f'For Test = {Counter(test_labels)} \n')
+    test_labels = np.asarray(one_hot_encoding(test_labels))
+
+    valid_labels = get_labels(valid_paths)
+    print(f'For Valid = {Counter(valid_labels)} \n')
+    valid_labels = np.asarray(one_hot_encoding(valid_labels))
+
+    train_images = get_images(train_paths)
+    test_images = get_images(test_paths)
+    valid_images = get_images(valid_paths)
+
+    # setup model
+    base_model = MobileNet(input_shape=(224, 224, 3),
+                           weights='imagenet', include_top=False)  # Not Icluding the FC layer
+    model = add_new_last_layer(base_model, nb_classes)
+
+    #    for i, layer in enumerate(model.layers):
+    #        print(i, layer.name)
+
+    #    import ipdb; ipdb.set_trace()
+    for layer in base_model.layers:
+        layer.trainable = False
+    model.compile(
+        optimizer='adam',
+        loss='categorical_crossentropy',
+        metrics=['accuracy'])
+
+    # import ipdb; ipdb.set_trace()
+    weight_train_labels = [np.argmax(r) for r in train_labels]
+    weights = class_weight.compute_class_weight(
+        'balanced', np.unique(weight_train_labels), y=weight_train_labels)
+    class_weights = {0: weights[0], 1: weights[1]}
+
+    history = model.fit(
+        x=train_images,
+        y=train_labels,
+        batch_size=batch_size,
+        epochs=int(nb_epoch),
+        verbose=1,
+        shuffle=True,
+        validation_data=(valid_images, valid_labels))
+
+    model.save(args.model)
+
+    y_pred_class = model.predict(test_images, verbose=1)
+
+    y_pred_class = [np.argmax(r) for r in y_pred_class]
+    test_y = [np.argmax(r) for r in test_labels]
+
+    print('Confusion matrix is \n', confusion_matrix(test_y, y_pred_class))
+    print(confusion_matrix(test_y, y_pred_class).ravel())
+
+    if args.ft:
+        ft_epochs = args.epoch_ft
+
+        fine_tune(model)
+        history = model.fit(
+            x=train_images,
+            y=train_labels,
+            batch_size=batch_size,
+            epochs=int(ft_epochs),
+            verbose=1,
+            shuffle=True,
+            validation_data=(valid_images, valid_labels))
+
+        model.save(args.model_ft)
+
+        print('_______Results After Fine Tuning____________')
+        y_pred_class = model.predict(test_images, verbose=1)
+
+        y_pred_class = [np.argmax(r) for r in y_pred_class]
+        test_y = [np.argmax(r) for r in test_labels]
+
+        print('Confusion matrix is \n', confusion_matrix(test_y, y_pred_class))
+        print(confusion_matrix(test_y, y_pred_class).ravel())
+
+
+if __name__ == "__main__":
+    a = argparse.ArgumentParser()
+    a.add_argument(
+        "--nb_epoch",
+        default=NB_EPOCHS,
+        help='Number of epochs for Transfer Learning. Default = 1.')
+    a.add_argument(
+        "--batch_size",
+        default=BAT_SIZE,
+        help='Batch size for training. Default = 32.')
+    a.add_argument("--model", help='Path to save model to.')
+    a.add_argument("--model_ft", help='Path to save fine tuned model')
+    a.add_argument(
+        "--ft", action="store_true", help='Whether to fine tune model or not')
+    a.add_argument(
+        '--epoch_ft',
+        default=NB_EPOCHS,
+        help='Number of epochs for Fine-Tuning for model. Default = 1.')
+
+    args = a.parse_args()
+
+    if args.ft:
+        print("Please make sure that you have added fine tuning epochs value")
+
+    train(args)
+
+</code></pre></div></div>
+
+<p>Raspberry Pi inference code</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pi_trash_classifier.py
+Long ago
+Feb 15, 2019
+
+You uploaded an item
+Text
+pi_trash_classifier.py
+import keras
+#from picamera import PiCamera
+#from picamera.array import PiRGBArray
+
+from keras.models import Model, load_model
+from keras.applications import mobilenet
+from keras.applications.mobilenet import preprocess_input
+from keras.preprocessing import image
+from keras.utils.generic_utils import CustomObjectScope
+import numpy as np
+
+import time
+import cv2
+import os
+img = []
+def pp_image():
+    global img
+    img = image.load_img('data/trash/trash1.jpg', target_size=(224, 224))
+    x = image.img_to_array(img)
+    x = np.expand_dims(x, axis=0)
+    x = preprocess_input(x)
+
+    return np.asarray(x)
+
+prediction_list=['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
+model=load_model('models/model1_org.h5', custom_objects={'relu6': mobilenet.relu6})
+
+#camera = PiCamera()
+#rawCapture = PiRGBArray(camera)
+
+for i in range(10):
+    time.sleep(0.5)
+
+    try:
+
+        #camera.capture(rawCapture, format='rgb')
+        #img=rawCapture.array
+        #cv2.imwrite('pic.png', img)
+
+        pred_img = pp_image()
+        yo = model.predict(pred_img)
+        pred = prediction_list[np.argmax(yo)]
+        cv2.putText(img, pred, (10,1000), cv2.FONT_HERSHEY_SIMPLEX, 5, (0,0,0), 5, False)
+        name='img'+str(i)+'.png'
+        cv2.imwrite(os.path.join('prediction_images', name), img)
+        #rawCapture.truncate(0)
+
+    except:
+        print('Could not perform prediction')
+
+camera.stop_preview()
+
+</code></pre></div></div>
+
+<p>Here is the cloud version from Clarify.io</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>trash_classifier.py
+Long ago
+Feb 15, 2019
+
+You uploaded an item
+Text
+trash_classifier.py
+import keras
+from pypylon import pylon
+from keras.models import Model, load_model
+from keras.applications import mobilenet
+from keras.applications.mobilenet import preprocess_input
+from keras.preprocessing import image
+from keras.utils.generic_utils import CustomObjectScope
+import numpy as np
+import matplotlib.pyplot as plt
+import time
+import cv2
+import os
+
+def pp_image(img):
+    img = image.load_img('pic.png', target_size=(224, 224))
+    x = image.img_to_array(img)
+    x = np.expand_dims(x, axis=0)
+    x = preprocess_input(x)
+
+    return np.asarray(x)
+
+prediction_list=['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
+model=load_model('models/model1_org.h5', custom_objects={'relu6': mobilenet.relu6})
+
+camera = pylon.InstantCamera(pylon.TlFactory.GetInstance().CreateFirstDevice())
+
+numberOfImagesToGrab = 100
+camera.StartGrabbingMax(numberOfImagesToGrab)
+
+converter = pylon.ImageFormatConverter()
+converter.OutputPixelFormat = pylon.PixelType_BGR8packed
+converter.OutputBitAlignment = pylon.OutputBitAlignment_MsbAligned
+i=0
+while camera.IsGrabbing():
+    time.sleep(0.005)
+    grabResult = camera.RetrieveResult(5000, pylon.TimeoutHandling_ThrowException)
+
+    if grabResult.GrabSucceeded():
+        # Access the image data.
+        print("SizeX: ", grabResult.Width)
+        print("SizeY: ", grabResult.Height)
+        #import ipdb; ipdb.set_trace()
+        img = converter.Convert(grabResult).GetArray()
+        cv2.imwrite('pic.png', img)
+        pred_img=pp_image(img)
+        yo=model.predict(pred_img)
+        pred=prediction_list[np.argmax(yo)]
+        cv2.putText(img, pred, (10,1000), cv2.FONT_HERSHEY_SIMPLEX, 5, (0,0,0), 5, False)
+        name='img'+str(i)+'.png'
+        cv2.imwrite(os.path.join('prediction_images', name), img)
+        i=i+1
+        #print("Gray value of first pixel: ", img[0, 0])
+
+    grabResult.Release()
+    if i==10:
+        break
+</code></pre></div></div>
+
+
+
+          </article>
+        </div>   
+        <div class="table-of-contents">
+          <h2>Contents</h2>
+          <ul><li><a href="#overview">Overview</a></li><li><a href="#implementation">Implementation</a></li></ul>
+        </div>
+      </div>
+      
+
+      
+      <div class="social-share-wrapper">
+        <div class="social-share"></div>
+      </div>
+      
+    </div>
+
+    <section class="author-detail">
+      <section class="post-footer-item author-card">
+        <div class="avatar">
+          <img src="/assets/img/profile.webp" alt="">
+        </div>
+        <div class="author-name" rel="author">gary ding</div>
+        <div class="bio">
+          <p>Java, Python</p>
+        </div>
+        
+        <ul class="sns-links">
+          
+          <li>
+            <a href="https://scholar.google.com/citations?user=AUupIooAAAAJ" target="_blank" aria-label="google-scholar">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-google-scholar"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://www.researchgate.net/profile/Shengzhou-Li" target="_blank" aria-label="researchgate">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-researchgate"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://orcid.org/0000-0001-6973-3825" target="_blank" aria-label="ORCID">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-ORCID"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://github.com/zhonger" target="_blank" aria-label="github">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://www.linkedin.com/in/shengzhouli/" target="_blank" aria-label="linkedin">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://segmentfault.com/u/wuwozhonger" target="_blank" aria-label="segmentfault">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-segmentfault"></use>
+              </svg>
+            </a>
+          </li>
+          
+        </ul>
+        
+      </section>
+      <section class="post-footer-item read-next">
+        
+        <div class="read-next-item">
+          <a href="/tech/ftc-11311.html" class="read-next-link" aria-label="FTC 11311"></a>
+          <section>
+            <span>FTC 11311</span>
+            <p>OverviewParagon 11311 was established in 2016 in Silicon ...</p>
+          </section>
+          
+          <div class="filter"></div>
+          <img src="/assets/img/garyding_bk3.jpg" alt="">
+          
+      </div>
+        
+
+        
+      </section>
+      
+   
+      
+
+      
+    </section>
+
+    <footer class="g-footer">
+  <section>Gary Ding ©
+  
+  
+    2015
+    -
+  
+  2022
+  
+    <a href="https://github.com/23garyd/" target="_blank" class="extlinks"> </a>
+  
+  </section>
+  <section>Powered by <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 
+  
+  </section>
+  
+  <section>
+
+  </section>
+  
+  
+  <section>
+    <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" class="extlinks">本网站由 <img src="/assets/icons/upyun.png" class="upyun" /></span> 提供 CDN 加速/云存储服务</a>
+  </section>
+  
+</footer>
+
+<button id="list" aria-label="Scroll back to top" class="mobile-list" type="button">
+  <svg class="icon list day" aria-hidden="true">
+    <use xlink:href="#icon-list-day"></use>
+  </svg>
+  <svg class="icon list night" aria-hidden="true">
+    <use xlink:href="#icon-list-night"></use>
+  </svg>
+  <svg class="icon exit day" aria-hidden="true">
+    <use xlink:href="#icon-exit-day"></use>
+  </svg>
+  <svg class="icon exit night" aria-hidden="true">
+    <use xlink:href="#icon-exit-night"></use>
+  </svg>
+</button>
+<button id="bttb" aria-label="Scroll back to top" class="bttb" type="button">
+  <svg class="icon up day" aria-hidden="true">
+    <use xlink:href="#icon-up-day"></use>
+  </svg>
+  <svg class="icon up night" aria-hidden="true">
+    <use xlink:href="#icon-up-night"></use>
+  </svg>
+</button>
+
+
+    
+    <div class="modal">
+        <div class="modal-content">
+          <header>
+            <span class="close">&times;</span>
+          </header>
+          <div class="container"></div>
+        </div>
+    </div>
+    
+  </div>
+
+  <script src="/assets/js/social-share.min.js"></script>
+  <script>
+    socialShare('.social-share', {
+      sites: [
+        
+          'wechat'
+          ,
+          
+        
+          'twitter'
+          
+        
+      ],
+      wechatQrcodeTitle: "分享到微信朋友圈",
+      wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+    });
+    $("a.social-share-icon").each(function() {
+      $(this).attr("aria-label", $(this).attr("class").split(' ')[1])
+    });
+  </script>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script src="/assets/js/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hotkeys-js/dist/hotkeys.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/plugin/customParseFormat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/plugin/relativeTime.js"></script>
+  <script>
+      // 给图片添加链接
+      $(document).ready(function() {
+          var baseurl = $("meta[property='og:baseurl']").attr('content');
+          $("p img").each(function() {
+              $(this).attr('data-src', $(this).attr('src')).removeAttr('src').addClass("lazyload").attr('src', baseurl + '/assets/img/loading.gif');
+              var strA = "<a data-fancybox='gallery' ref='gallery' href='" + $(this).attr('data-src') + "' data-caption='" + $(this).attr('alt') + "'></a>";
+              $(this).wrapAll(strA);
+          });
+
+          Fancybox.bind('[data-fancybox]', {
+            on: {
+              load: (fancybox, slide) => {
+                var gray = $("meta[property='og:gray']").attr('content');
+                if(gray == "true"){
+                    $(".fancybox__content img").addClass("gray");
+                    $(".carousel__track .fancybox__thumb").addClass("gray");
+                }
+              }
+            }
+          });   
+          
+          
+
+          if($("#comments-switch").length > 0){
+            var comment_status = $("#cmn-toggle-4")[0].checked;
+            if(comment_status){
+              $("#waline").addClass("active");
+            }else {
+              $("#disqus_thread").addClass("active");
+            }
+            $("#cmn-toggle-4").click(function(){
+              $("#disqus_thread").toggleClass("active");
+              $("#waline").toggleClass("active");
+            })
+          }else {
+            if($("#disqus_thread").length > 0) {
+              $("#disqus_thread").addClass("active");
+            }else if($("#waline").length > 0) {
+              $("#waline").addClass("active");
+            }
+          }
+
+          var time_formats = ['YYYY-MM-DD HH:mm:ss ZZ', 'YYYY DD MMM HH:mm:ss ZZ', 'YYYY年MM月DD日 HH:mm:ss ZZ'];
+          function dateFormat(date, format){
+            var date_org = dayjs(date, time_formats[format]);
+            var date     = date_org.format(time_formats[format]);
+            return {"date_org": date_org, "date": date}
+          }
+
+          dayjs.extend(window.dayjs_plugin_customParseFormat);
+          dayjs.extend(window.dayjs_plugin_relativeTime);
+          var post_date = $("meta[property='post-date']").attr('content');
+          var post_date_format = $("meta[property='post-date-format']").attr('content');
+          var local_post_date = dateFormat(post_date, post_date_format);
+
+          $(".post time span.create-at").html(local_post_date["date"]);
+
+          fetch("https://api.github.com/repos/23garyd/jekyll-theme-H2O-ac/commits?path=_posts/2019-05-15-trashcan-makerfair.md")
+          .then((response) => {
+            return response.json();
+          })
+          .then((commits) => {
+            if(commits.length != 0){
+              var update_at = dayjs(commits[0]['commit']['committer']['date']);
+            }else {
+              var update_at = post_date
+            }
+
+            var local_update_at = dateFormat(update_at, post_date_format);
+            $('.post time span.update-at').html(local_update_at["date"]);
+
+            var relative_time = dayjs().diff(local_update_at["date_org"], 'day');
+            if(relative_time > 365){
+              $(".post-copyright").append("<p class='tips'>本文最后一次更新为 <span>" + relative_time + "</span> 天前，文章中的某些内容可能已过时！</p>");
+            }
+          });   
+          
+          /*
+          * Keyboard shortcut bind: left and right
+          */
+
+          var previous_url = $("meta[property='og:previous_url']").attr('content');
+          var next_url = $("meta[property='og:next_url']").attr('content');
+
+          hotkeys('left', function(event, handler){
+              // Prevent the default refresh event under WINDOWS system
+              event.preventDefault();
+              if(previous_url){
+                  console.log('you pressed left!');
+                  window.location.href = previous_url;
+              }else {
+                  $("#no-previous").addClass("active");
+                  console.log('已经是最新一篇文章了！');
+                  console.log('Already the latest article！');
+                  setTimeout(function(){$("#no-previous").removeClass("active");}, 1500);
+              }
+          });
+
+          hotkeys('right', function(event, handler){
+              // Prevent the default refresh event under WINDOWS system
+              event.preventDefault();
+              if(next_url){
+                  console.log('you pressed right!');
+                  window.location.href = next_url;
+              }else {
+                  $("#no-next").addClass("active");
+                  console.log('已经是最后一篇文章了！');
+                  console.log('Already the last article！');
+                  setTimeout(function(){$("#no-next").removeClass("active");}, 1500);
+              }
+          });
+      });
+  </script>
+  <script src="https://at.alicdn.com/t/font_3046306_skfh9jzzbbf.js"></script>
+  
+  
+  
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+        if (navigator.serviceWorker.controller) {
+            console.log("An active service worker found, no need to register");
+        } else {
+            // Register the service worker
+            navigator.serviceWorker
+            .register("/sw.js", {
+                scope: "/"
+            })
+            .then(function (reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    }
+
+// 检测浏览器是否支持SW
+// if(navigator.serviceWorker != null){
+//     navigator.serviceWorker.register("/sw.js")
+//         .then(function(registartion){
+//             console.log('支持sw:',registartion.scope)
+//         })
+// } else {
+//     console.log('不支持sw')
+// }
+</script>
+	<!--
+Author: Ray-Eldath
+refer to:
+ - http://docs.mathjax.org/en/latest/options/index.html
+-->
+
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ["$", "$"] ],
+			displayMath: [ ["$$", "$$"] ],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+      });
+    </script>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.6/dist/mermaid.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            mermaid.initialize({
+                startOnLoad:true,
+                theme: "default",
+            });
+            mermaid.init(undefined, $('.mermaid2'));
+        });
+    </script>
+ 
+</body>
+
+</html>

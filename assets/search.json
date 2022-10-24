@@ -16,6 +16,84 @@
       "title"    : "Google Summer Of Code 2022 Report",
       "tags"     : "Java Python FRC Linux",
       "url"      : "/tech/gsoc-2022-report.html"
+    } ,
+  
+    {
+      "title"    : "Renewable Recycling Robot with UR5e part 5",
+      "tags"     : "Python Linux",
+      "url"      : "/tech/fd-ur5-part5.html"
+    } ,
+  
+    {
+      "title"    : "Renewable Recycling Robot with UR5e Part 4",
+      "tags"     : "Python Linux",
+      "url"      : "/tech/fd-ur5-part4.html"
+    } ,
+  
+    {
+      "title"    : "Renewable Recycling Robot with UR5e Part 3",
+      "tags"     : "Python Linux",
+      "url"      : "/tech/fd-ur5-part3.html"
+    } ,
+  
+    {
+      "title"    : "Renewable Recycling Robot with UR5e Part 2",
+      "tags"     : "Python Linux",
+      "url"      : "/tech/fd-ur5-part2.html"
+    } ,
+  
+    {
+      "title"    : "Eco-Friendly Farm Robot PoC Part 6",
+      "tags"     : "Java Python Linux",
+      "url"      : "/tech/opencv-rover-part6.html"
+    } ,
+  
+    {
+      "title"    : "Eco-Friendly Farm Robot PoC Part 4",
+      "tags"     : "Java Python Linux",
+      "url"      : "/tech/opencv-rover-part4.html"
+    } ,
+  
+    {
+      "title"    : "Eco-Friendly Farm Robot PoC Part 3",
+      "tags"     : "Java Python Linux",
+      "url"      : "/tech/opencv-rover-part3.html"
+    } ,
+  
+    {
+      "title"    : "Eco-Friendly Farm Robot PoC Part 2",
+      "tags"     : "Java Python Linux",
+      "url"      : "/tech/opencv-rover-part2.html"
+    } ,
+  
+    {
+      "title"    : "Eco-Friendly Farm Robot PoC Part 1",
+      "tags"     : "Java Python Linux",
+      "url"      : "/tech/opencv-rover-part1.html"
+    } ,
+  
+    {
+      "title"    : "Renewable Recycling Robot with UR5e Part 1",
+      "tags"     : "Python Linux",
+      "url"      : "/tech/fd-ur5-part1.html"
+    } ,
+  
+    {
+      "title"    : "Eco-Friendly Farm Robot PoC Part 5",
+      "tags"     : "Java Python Linux",
+      "url"      : "/tech/opencv-rover-part5.html"
+    } ,
+  
+    {
+      "title"    : "FTC 11311",
+      "tags"     : "Java",
+      "url"      : "/tech/ftc-11311.html"
+    } ,
+  
+    {
+      "title"    : "Intelligent Trash Can",
+      "tags"     : "Python Linux",
+      "url"      : "/tech/trashcan-makerfair.html"
     } 
   
 ]

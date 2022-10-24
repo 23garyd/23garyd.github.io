@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewable Recycling Robot with UR5e part 5 - Gary Ding</title>
+    <meta name="author"  content="gary ding">
+    <meta name="description" content="Renewable Recycling Robot with UR5e part 5">
+    <meta name="keywords"  content="Python, Linux">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Renewable Recycling Robot with UR5e part 5 - Gary Ding">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://h2o-ac.pages.dev/tech/fd-ur5-part5.html">
+    <meta property="og:baseurl" content="">
+    <meta property="og:description" content="A personal technical blog for some interesting things in the learning process">
+    <meta property="og:site_name" content="Gary Ding">
+    <meta property="og:gray" content="false">
+    
+    <meta property="og:previous_url" content="/tech/gsoc-2022-report.html">
+    
+    
+    <meta property="og:next_url" content="/tech/fd-ur5-part4.html">
+    
+    <meta property="post-date-format" content="0">
+    
+    <meta property="post-date" content="2022-07-10 00:00:00 +0000" />
+    
+    
+    <meta name="theme-color" content="#81BBFF" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/assets/img/touch/apple-touch-icon.png"/>
+    <link rel="Shortcut Icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.min.css" />
+    <link rel="stylesheet" href="https://github.com/pages-themes/cayman/blob/master/assets/css/style.scss" />
+    <link rel="stylesheet" href="/assets/css/plugins.min.css" />
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-light.min.css" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/plugins/line-numbers/prism-line-numbers.min.css">
+    
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.css" />
+    <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+</head>
+
+
+
+<body class="line-numbers" ontouchstart="">
+
+
+  <!--[if lt IE 10]>
+  <div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+  <![endif]-->
+  
+  <div id="all" class="post">
+  
+    <div class="alert-tip" id="no-previous">
+      
+      已经是最新一篇文章了！
+      
+    </div>
+    <div class="alert-tip" id="no-next">
+      
+      已经是最后一篇文章了！
+      
+    </div>
+    <input id="nm-switch" type="hidden" value="false"> <header class="g-header">
+    <div class="g-logo">
+      <a href="/" aria-label="logo"></a>
+    </div>
+    <!-- <i id="menu-toggle" class="iconfont icon-menu"></i> -->
+    <div id="mode-toggle">
+        <svg class="icon icon-day" aria-hidden="true">
+            <use xlink:href="#icon-day"></use>
+        </svg>
+        <svg class="icon icon-night" aria-hidden="true">
+            <use xlink:href="#icon-night"></use>
+        </svg>
+    </div>
+    <svg id="menu-toggle" class="icon-menu" aria-hidden="true">
+        <use xlink:href="#icon-menu"></use>
+    </svg>
+    <nav class="g-nav">
+        <ul>
+            
+                
+                <li>
+                    <a href="/" aria-label="home">
+                        home
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/blog/index.html" aria-label="blog">
+                        blog
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/archives.html" aria-label="archives">
+                        archives
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/tags.html" aria-label="tags">
+                        tags
+                    </a>
+                </li>
+                
+            
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle"> about </a>
+                    <ul class="dropdown-menu">
+                    
+                        <li>
+                            <a href="/logs.html" aria-label="logs">
+                                logs
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/tos.html" aria-label="tos">
+                                tos
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/cv.html" aria-label="CV">
+                                CV
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/links.html" aria-label="links">
+                                links
+                            </a>
+                        </li>
+                    
+                    </ul> 
+                </li>
+                
+            
+            <li class="mode">
+                <svg class="icon day" aria-hidden="true">
+                    <use xlink:href="#icon-day"></use>
+                </svg>
+                <svg class="icon night" aria-hidden="true">
+                    <use xlink:href="#icon-night"></use>
+                </svg>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+    <header
+      class="g-banner post-header post-pattern-circuitBoard bgcolor-default "
+      data-theme="default"
+    >
+      <div class="post-wrapper">
+        <div class="post-tags">
+          
+            
+              <a href="/tags.html#Python" class="post-tag">Python</a>
+            
+              <a href="/tags.html#Linux" class="post-tag">Linux</a>
+            
+          
+        </div>
+        <h1>Renewable Recycling Robot with UR5e part 5</h1>
+        <div class="post-meta">
+          <span class="post-meta-item">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-user"></use>
+            </svg>
+            Gary Ding
+          </span>
+          <time class="post-meta-item" datetime="22-07-10">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-calendar"></use>
+            </svg>
+            <span class="create-at"></span>
+          </time>
+          <time class="post-meta-item" datetime="22-07-10">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-update"></use>
+            </svg>
+            <span class="update-at"></span>
+          </time>
+          
+            <span class="post-meta-item">
+              <svg class="icon words" aria-hidden="true">
+                <use xlink:href="#icon-words"></use>
+              </svg>
+              
+              Total size  6.6k  words
+            </span>
+            <span class="post-meta-item">
+              <svg class="icon time" aria-hidden="true">
+                <use xlink:href="#icon-time"></use>
+              </svg>
+              Time to read is 19 minutes
+            </span>
+            
+              <span class="post-meta-item">
+                <svg class="icon pv" aria-hidden="true">
+                  <use xlink:href="#icon-pv"></use>
+                </svg>
+                Total viewed  <span id="busuanzi_value_page_pv"></span> times 
+              </span>
+            
+          
+          
+            <span class="post-meta-item">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-image"></use>
+              </svg>
+             
+            </span>
+          
+        </div>
+      </div>
+      
+      <div class="filter"></div>
+        <div class="post-cover" style="background: url('/assets/img/fd_working1.jpg') center no-repeat; background-size: cover;"></div>
+      
+    </header>
+    <div class="post-content visible">
+      
+      <h2 class="post-subtitle">Algorithms to Shorten the Setup Time of Vision Guided Robots</h2>
+      
+
+      
+      <div class="container">  
+        <div class="contents">
+          <article class="markdown-body">
+            <h2 id="overview">Overview</h2>
+<p>Robotics are used a lot in enterprises for production. This enables them to produce at low cost with a constant quality. One would thus expect that given these advantages the smaller enterprises would also use robot systems. However, from the literature review it was found that the Small to Medium Enterprises are not using very much robotic systems. Usage of robotics could improve the production and help stay competitive. The problem is that current robot systems are not sufficiently flexible enough.  Therefore, to be cost efficient the robot system needs to be usable for different tasks with different positions, which are usually at different places in the factory. This requires repeated reconfiguration, which is very time consuming. If this is done often it cuts the effective working time and thus increases the payback time of the robot. In conclusion, the key to increasing the uptake of robotics in is to reduce the time required for reconfiguration.</p>
+
+<p>Vision systems mounted on the robot and in its surroundings can make the system a lot more flexible. If the robot for instance would be able to scan for position changes in setup and location would not be such a problem. The robot can be moved from location to another for different tasks. Or changes in the setup like different conveyor belts or machines that need to be tended could be automatically detected. If the robot could scan its new environment again and update the location this could save time.</p>
+
+<p>Vision systems can also be used to determine the location of the phones that needs to be grabbed. With this the exact location of the product does not need to be programmed. This gives less constraints to environment, as it is then not necessary to design a guiding system to put a product precisely in a spot so that the robot can grab it. By using vision systems the product can be in different locations in different orientations. This makes the system a lot more flexible and possibly also more robust.</p>
+
+<p>The goal of this project is to develop a industrial robot arms by automating two parts of the installation process:
+• Develop a system that can help with fast (extrinsic) calibration of a camera on a robot arm.The combined error should be below a 10mm level so that the camera can be used to grasp something using the camera with a Lacquey gripper.
+• Use the camera to automatically map the surroundings of the robot for obstacles. Mapping the surroundings (workspace) of the robot arm should be done in a safe way, during scanning the robot should not collide with an unknown object.</p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>The following are the key challenges</p>
+
+<ul>
+  <li>Camera pose estimation
+To determine the camera location on the robot the camera location relative to a fixed point needs to be known. Therefore the first part will discuss the different camera pose estimation methods. The different implementations will be discussed, tested in simulation and with a real camera on a robot.</li>
+</ul>
+
+<h2 id="implementation-1">Implementation</h2>
+<p>I chose to use Aruco Tag to get camera pose estimation as it is mature and widely used in industry.<br>
+I used the aruco.estimatePoseSingleMarkers() function to return the rvec rotation matrix and tvec displacement matrix of the found aurco label for conversion, find out the distance and angle of aurco relative to the camera cam, and realize the use of aurco for positioning.</p>
+
+<p>Here is what looks like</p>
+
+<p><img src="/assets/img/aruco-1.png" alt=""></p>
+
+<p>The python code is</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">cv2.aruco</span> <span class="k">as</span> <span class="n">aruco</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="c1">#加载鱼眼镜头的yaml标定文件，检测aruco并且估算与标签之间的距离,获取偏航，俯仰，滚动
+</span>
+<span class="c1">#加载相机纠正参数
+</span><span class="n">cv_file</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">FileStorage</span><span class="p">(</span><span class="s">"yuyan.yaml"</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">FILE_STORAGE_READ</span><span class="p">)</span>
+<span class="n">camera_matrix</span> <span class="o">=</span> <span class="n">cv_file</span><span class="p">.</span><span class="n">getNode</span><span class="p">(</span><span class="s">"camera_matrix"</span><span class="p">).</span><span class="n">mat</span><span class="p">()</span>
+<span class="n">dist_matrix</span> <span class="o">=</span> <span class="n">cv_file</span><span class="p">.</span><span class="n">getNode</span><span class="p">(</span><span class="s">"dist_coeff"</span><span class="p">).</span><span class="n">mat</span><span class="p">()</span>
+<span class="n">cv_file</span><span class="p">.</span><span class="n">release</span><span class="p">()</span>
+
+
+<span class="c1">#默认cam参数
+# dist=np.array(([[-0.58650416 , 0.59103816, -0.00443272 , 0.00357844 ,-0.27203275]]))
+# newcameramtx=np.array([[189.076828   ,  0.    ,     361.20126638]
+#  ,[  0 ,2.01627296e+04 ,4.52759577e+02]
+#  ,[0, 0, 1]])
+# mtx=np.array([[398.12724231  , 0.      ,   304.35638757],
+#  [  0.       ,  345.38259888, 282.49861858],
+#  [  0.,           0.,           1.        ]])
+</span>
+
+
+<span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1"># cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
+# cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+# cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+</span>
+<span class="n">font</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span> <span class="c1">#font for displaying text (below)
+</span>
+<span class="c1">#num = 0
+</span><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">ret</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">cap</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">h1</span><span class="p">,</span> <span class="n">w1</span> <span class="o">=</span> <span class="n">frame</span><span class="p">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+    <span class="c1"># 读取摄像头画面
+</span>    <span class="c1"># 纠正畸变
+</span>    <span class="n">newcameramtx</span><span class="p">,</span> <span class="n">roi</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">getOptimalNewCameraMatrix</span><span class="p">(</span><span class="n">camera_matrix</span><span class="p">,</span> <span class="n">dist_matrix</span><span class="p">,</span> <span class="p">(</span><span class="n">h1</span><span class="p">,</span> <span class="n">w1</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">h1</span><span class="p">,</span> <span class="n">w1</span><span class="p">))</span>
+    <span class="n">dst1</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">undistort</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">camera_matrix</span><span class="p">,</span> <span class="n">dist_matrix</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">newcameramtx</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w1</span><span class="p">,</span> <span class="n">h1</span> <span class="o">=</span> <span class="n">roi</span>
+    <span class="n">dst1</span> <span class="o">=</span> <span class="n">dst1</span><span class="p">[</span><span class="n">y</span><span class="p">:</span><span class="n">y</span> <span class="o">+</span> <span class="n">h1</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span> <span class="o">+</span> <span class="n">w1</span><span class="p">]</span>
+    <span class="n">frame</span><span class="o">=</span><span class="n">dst1</span>
+
+    <span class="c1">#灰度化，检测aruco标签，所用字典为6×6----250
+</span>    <span class="n">gray</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+    <span class="n">aruco_dict</span> <span class="o">=</span> <span class="n">aruco</span><span class="p">.</span><span class="n">Dictionary_get</span><span class="p">(</span><span class="n">aruco</span><span class="p">.</span><span class="n">DICT_6X6_250</span><span class="p">)</span>
+    <span class="n">parameters</span> <span class="o">=</span>  <span class="n">aruco</span><span class="p">.</span><span class="n">DetectorParameters_create</span><span class="p">()</span>
+
+    <span class="c1">#使用aruco.detectMarkers()函数可以检测到marker，返回ID和标志板的4个角点坐标
+</span>    <span class="n">corners</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="n">rejectedImgPoints</span> <span class="o">=</span> <span class="n">aruco</span><span class="p">.</span><span class="n">detectMarkers</span><span class="p">(</span><span class="n">gray</span><span class="p">,</span><span class="n">aruco_dict</span><span class="p">,</span><span class="n">parameters</span><span class="o">=</span><span class="n">parameters</span><span class="p">)</span>
+
+<span class="c1">#    如果找不打id
+</span>    <span class="k">if</span> <span class="n">ids</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="c1">#获取aruco返回的rvec旋转矩阵、tvec位移矩阵
+</span>        <span class="n">rvec</span><span class="p">,</span> <span class="n">tvec</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">aruco</span><span class="p">.</span><span class="n">estimatePoseSingleMarkers</span><span class="p">(</span><span class="n">corners</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="n">camera_matrix</span><span class="p">,</span> <span class="n">dist_matrix</span><span class="p">)</span>
+        <span class="c1"># 估计每个标记的姿态并返回值rvet和tvec ---不同
+</span>        <span class="c1">#rvec为旋转矩阵，tvec为位移矩阵
+</span>        <span class="c1"># from camera coeficcients
+</span>        <span class="p">(</span><span class="n">rvec</span><span class="o">-</span><span class="n">tvec</span><span class="p">).</span><span class="nb">any</span><span class="p">()</span> <span class="c1"># get rid of that nasty numpy value array error
+</span>        <span class="c1">#print(rvec)
+</span>
+
+
+        <span class="c1">#在画面上 标注auruco标签的各轴
+</span>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rvec</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="n">aruco</span><span class="p">.</span><span class="n">drawAxis</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">camera_matrix</span><span class="p">,</span> <span class="n">dist_matrix</span><span class="p">,</span> <span class="n">rvec</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:],</span> <span class="n">tvec</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:],</span> <span class="mf">0.03</span><span class="p">)</span>
+            <span class="n">aruco</span><span class="p">.</span><span class="n">drawDetectedMarkers</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">corners</span><span class="p">,</span><span class="n">ids</span><span class="p">)</span>
+
+
+        <span class="c1">###### 显示id标记 #####
+</span>        <span class="n">cv2</span><span class="p">.</span><span class="n">putText</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="s">"Id: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ids</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">64</span><span class="p">),</span> <span class="n">font</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="mi">2</span><span class="p">,</span><span class="n">cv2</span><span class="p">.</span><span class="n">LINE_AA</span><span class="p">)</span>
+
+
+        <span class="c1">###### 角度估计 #####
+</span>        <span class="c1">#print(rvec)
+</span>        <span class="c1">#考虑Z轴（蓝色）的角度
+</span>        <span class="c1">#本来正确的计算方式如下，但是由于蜜汁相机标定的问题，实测偏航角度能最大达到104°所以现在×90/104这个系数作为最终角度
+</span>        <span class="n">deg</span><span class="o">=</span><span class="n">rvec</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="n">math</span><span class="p">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">180</span>
+        <span class="c1">#deg=rvec[0][0][2]/math.pi*180*90/104
+</span>        <span class="c1"># 旋转矩阵到欧拉角
+</span>        <span class="n">R</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">float64</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="p">.</span><span class="n">Rodrigues</span><span class="p">(</span><span class="n">rvec</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+        <span class="n">sy</span><span class="o">=</span><span class="n">math</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">R</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">R</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span>  <span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">singular</span><span class="o">=</span><span class="n">sy</span><span class="o">&lt;</span> <span class="mf">1e-6</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">singular</span><span class="p">:</span><span class="c1">#偏航，俯仰，滚动
+</span>            <span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">R</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">R</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">atan2</span><span class="p">(</span><span class="o">-</span><span class="n">R</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">sy</span><span class="p">)</span>
+            <span class="n">z</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">R</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">atan2</span><span class="p">(</span><span class="o">-</span><span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">atan2</span><span class="p">(</span><span class="o">-</span><span class="n">R</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">sy</span><span class="p">)</span>
+            <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="c1"># 偏航，俯仰，滚动换成角度
+</span>        <span class="n">rx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mf">180.0</span> <span class="o">/</span> <span class="mf">3.141592653589793</span>
+        <span class="n">ry</span> <span class="o">=</span> <span class="n">y</span> <span class="o">*</span> <span class="mf">180.0</span> <span class="o">/</span> <span class="mf">3.141592653589793</span>
+        <span class="n">rz</span> <span class="o">=</span> <span class="n">z</span> <span class="o">*</span> <span class="mf">180.0</span> <span class="o">/</span> <span class="mf">3.141592653589793</span>
+
+        <span class="n">cv2</span><span class="p">.</span><span class="n">putText</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="s">'deg_z:'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">ry</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s">'deg'</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">140</span><span class="p">),</span> <span class="n">font</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="n">cv2</span><span class="p">.</span><span class="n">LINE_AA</span><span class="p">)</span>
+        <span class="c1">#print("偏航，俯仰，滚动",rx,ry,rz)
+</span>
+
+        <span class="c1">###### 距离估计 #####
+</span>        <span class="n">distance</span> <span class="o">=</span> <span class="p">((</span><span class="n">tvec</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.02</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.0254</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>  <span class="c1"># 单位是米
+</span>        <span class="c1">#distance = (tvec[0][0][2]) * 100  # 单位是米
+</span>
+
+        <span class="c1"># 显示距离
+</span>        <span class="n">cv2</span><span class="p">.</span><span class="n">putText</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="s">'distance:'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s">'m'</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">110</span><span class="p">),</span> <span class="n">font</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="n">cv2</span><span class="p">.</span><span class="n">LINE_AA</span><span class="p">)</span>
+
+        <span class="c1">####真实坐标换算####（to do）
+</span>        <span class="c1"># print('rvec:',rvec,'tvec:',tvec)
+</span>        <span class="c1"># # new_tvec=np.array([[-0.01361995],[-0.01003278],[0.62165339]])
+</span>        <span class="c1"># # 将相机坐标转换为真实坐标
+</span>        <span class="c1"># r_matrix, d = cv2.Rodrigues(rvec)
+</span>        <span class="c1"># r_matrix = -np.linalg.inv(r_matrix)  # 相机旋转矩阵
+</span>        <span class="c1"># c_matrix = np.dot(r_matrix, tvec)  # 相机位置矩阵
+</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1">##### DRAW "NO IDS" #####
+</span>        <span class="n">cv2</span><span class="p">.</span><span class="n">putText</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="s">"No Ids"</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">64</span><span class="p">),</span> <span class="n">font</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="mi">2</span><span class="p">,</span><span class="n">cv2</span><span class="p">.</span><span class="n">LINE_AA</span><span class="p">)</span>
+
+
+    <span class="c1"># 显示结果画面
+</span>    <span class="n">cv2</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">"frame"</span><span class="p">,</span><span class="n">frame</span><span class="p">)</span>
+
+    <span class="n">key</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="mi">27</span><span class="p">:</span>         <span class="c1"># 按esc键退出
+</span>        <span class="k">print</span><span class="p">(</span><span class="s">'esc break...'</span><span class="p">)</span>
+        <span class="n">cap</span><span class="p">.</span><span class="n">release</span><span class="p">()</span>
+        <span class="n">cv2</span><span class="p">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+        <span class="k">break</span>
+
+    <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s">' '</span><span class="p">):</span>   <span class="c1"># 按空格键保存
+#        num = num + 1
+#        filename = "frames_%s.jpg" % num  # 保存一张图像
+</span>        <span class="n">filename</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">())[:</span><span class="mi">10</span><span class="p">]</span> <span class="o">+</span> <span class="s">".jpg"</span>
+        <span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">frame</span><span class="p">)</span>
+
+
+
+</code></pre></div></div>
+
+<ul>
+  <li>Extrinsic calibration
+To combine with the pose of the robot to get an estimate of the location of the camera on the robot. This will be tested in simulation and on a real robot arm.
+As the relative location of UR5-e and the test station can be moved for some reason the calibration needs to be done continuously to get most accurate location.</li>
+  <li>Workspace Mapping
+The last part discusses the methods that can be used to get a 3D map of the obstacles in the direct environment of the robot</li>
+</ul>
+
+<h2 id="video-links">Video Links</h2>
+
+<p>UR-5e Dual gripper control</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/_kVM-lex3vk" frameborder="0"></iframe>
+
+
+
+          </article>
+        </div>   
+        <div class="table-of-contents">
+          <h2>Contents</h2>
+          <ul><li><a href="#overview">Overview</a></li><li><a href="#implementation">Implementation</a></li><li><a href="#implementation-1">Implementation</a></li><li><a href="#video-links">Video Links</a></li></ul>
+        </div>
+      </div>
+      
+
+      
+      <div class="social-share-wrapper">
+        <div class="social-share"></div>
+      </div>
+      
+    </div>
+
+    <section class="author-detail">
+      <section class="post-footer-item author-card">
+        <div class="avatar">
+          <img src="/assets/img/profile.webp" alt="">
+        </div>
+        <div class="author-name" rel="author">gary ding</div>
+        <div class="bio">
+          <p>Java, Python</p>
+        </div>
+        
+        <ul class="sns-links">
+          
+          <li>
+            <a href="https://scholar.google.com/citations?user=AUupIooAAAAJ" target="_blank" aria-label="google-scholar">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-google-scholar"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://www.researchgate.net/profile/Shengzhou-Li" target="_blank" aria-label="researchgate">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-researchgate"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://orcid.org/0000-0001-6973-3825" target="_blank" aria-label="ORCID">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-ORCID"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://github.com/zhonger" target="_blank" aria-label="github">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://www.linkedin.com/in/shengzhouli/" target="_blank" aria-label="linkedin">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://segmentfault.com/u/wuwozhonger" target="_blank" aria-label="segmentfault">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-segmentfault"></use>
+              </svg>
+            </a>
+          </li>
+          
+        </ul>
+        
+      </section>
+      <section class="post-footer-item read-next">
+        
+        <div class="read-next-item">
+          <a href="/tech/gsoc-2022-report.html" class="read-next-link" aria-label="Google Summer Of Code 2022 Report"></a>
+          <section>
+            <span>Google Summer Of Code 2022 Report</span>
+            <p>OverviewOver the past three months, I have had the valuab...</p>
+          </section>
+          
+          <div class="filter"></div>
+          <img src="/assets/img/gsoc-opencv-17.png" alt="">
+          
+      </div>
+        
+
+        
+        <div class="read-next-item">
+          <a href="/tech/fd-ur5-part4.html" class="read-next-link" aria-label="Renewable Recycling Robot with UR5e Part 4"></a>
+            <section>
+              <span>Renewable Recycling Robot with UR5e Part 4</span>
+              <p>OverviewVision based grasping is mainly achieved by chang...</p>
+            </section>
+            
+            <div class="filter"></div>
+            <img src="/assets/img/fd_485.jpg" alt="">
+            
+        </div>
+        
+      </section>
+      
+   
+      
+
+      
+    </section>
+
+    <footer class="g-footer">
+  <section>Gary Ding ©
+  
+  
+    2015
+    -
+  
+  2022
+  
+    <a href="https://github.com/23garyd/" target="_blank" class="extlinks"> </a>
+  
+  </section>
+  <section>Powered by <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 
+  
+  </section>
+  
+  <section>
+
+  </section>
+  
+  
+  <section>
+    <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" class="extlinks">本网站由 <img src="/assets/icons/upyun.png" class="upyun" /></span> 提供 CDN 加速/云存储服务</a>
+  </section>
+  
+</footer>
+
+<button id="list" aria-label="Scroll back to top" class="mobile-list" type="button">
+  <svg class="icon list day" aria-hidden="true">
+    <use xlink:href="#icon-list-day"></use>
+  </svg>
+  <svg class="icon list night" aria-hidden="true">
+    <use xlink:href="#icon-list-night"></use>
+  </svg>
+  <svg class="icon exit day" aria-hidden="true">
+    <use xlink:href="#icon-exit-day"></use>
+  </svg>
+  <svg class="icon exit night" aria-hidden="true">
+    <use xlink:href="#icon-exit-night"></use>
+  </svg>
+</button>
+<button id="bttb" aria-label="Scroll back to top" class="bttb" type="button">
+  <svg class="icon up day" aria-hidden="true">
+    <use xlink:href="#icon-up-day"></use>
+  </svg>
+  <svg class="icon up night" aria-hidden="true">
+    <use xlink:href="#icon-up-night"></use>
+  </svg>
+</button>
+
+
+    
+    <div class="modal">
+        <div class="modal-content">
+          <header>
+            <span class="close">&times;</span>
+          </header>
+          <div class="container"></div>
+        </div>
+    </div>
+    
+  </div>
+
+  <script src="/assets/js/social-share.min.js"></script>
+  <script>
+    socialShare('.social-share', {
+      sites: [
+        
+          'wechat'
+          ,
+          
+        
+          'twitter'
+          
+        
+      ],
+      wechatQrcodeTitle: "分享到微信朋友圈",
+      wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+    });
+    $("a.social-share-icon").each(function() {
+      $(this).attr("aria-label", $(this).attr("class").split(' ')[1])
+    });
+  </script>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script src="/assets/js/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hotkeys-js/dist/hotkeys.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/plugin/customParseFormat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/plugin/relativeTime.js"></script>
+  <script>
+      // 给图片添加链接
+      $(document).ready(function() {
+          var baseurl = $("meta[property='og:baseurl']").attr('content');
+          $("p img").each(function() {
+              $(this).attr('data-src', $(this).attr('src')).removeAttr('src').addClass("lazyload").attr('src', baseurl + '/assets/img/loading.gif');
+              var strA = "<a data-fancybox='gallery' ref='gallery' href='" + $(this).attr('data-src') + "' data-caption='" + $(this).attr('alt') + "'></a>";
+              $(this).wrapAll(strA);
+          });
+
+          Fancybox.bind('[data-fancybox]', {
+            on: {
+              load: (fancybox, slide) => {
+                var gray = $("meta[property='og:gray']").attr('content');
+                if(gray == "true"){
+                    $(".fancybox__content img").addClass("gray");
+                    $(".carousel__track .fancybox__thumb").addClass("gray");
+                }
+              }
+            }
+          });   
+          
+          
+
+          if($("#comments-switch").length > 0){
+            var comment_status = $("#cmn-toggle-4")[0].checked;
+            if(comment_status){
+              $("#waline").addClass("active");
+            }else {
+              $("#disqus_thread").addClass("active");
+            }
+            $("#cmn-toggle-4").click(function(){
+              $("#disqus_thread").toggleClass("active");
+              $("#waline").toggleClass("active");
+            })
+          }else {
+            if($("#disqus_thread").length > 0) {
+              $("#disqus_thread").addClass("active");
+            }else if($("#waline").length > 0) {
+              $("#waline").addClass("active");
+            }
+          }
+
+          var time_formats = ['YYYY-MM-DD HH:mm:ss ZZ', 'YYYY DD MMM HH:mm:ss ZZ', 'YYYY年MM月DD日 HH:mm:ss ZZ'];
+          function dateFormat(date, format){
+            var date_org = dayjs(date, time_formats[format]);
+            var date     = date_org.format(time_formats[format]);
+            return {"date_org": date_org, "date": date}
+          }
+
+          dayjs.extend(window.dayjs_plugin_customParseFormat);
+          dayjs.extend(window.dayjs_plugin_relativeTime);
+          var post_date = $("meta[property='post-date']").attr('content');
+          var post_date_format = $("meta[property='post-date-format']").attr('content');
+          var local_post_date = dateFormat(post_date, post_date_format);
+
+          $(".post time span.create-at").html(local_post_date["date"]);
+
+          fetch("https://api.github.com/repos/23garyd/jekyll-theme-H2O-ac/commits?path=_posts/2022-07-10-fd-ur5-part5.md")
+          .then((response) => {
+            return response.json();
+          })
+          .then((commits) => {
+            if(commits.length != 0){
+              var update_at = dayjs(commits[0]['commit']['committer']['date']);
+            }else {
+              var update_at = post_date
+            }
+
+            var local_update_at = dateFormat(update_at, post_date_format);
+            $('.post time span.update-at').html(local_update_at["date"]);
+
+            var relative_time = dayjs().diff(local_update_at["date_org"], 'day');
+            if(relative_time > 365){
+              $(".post-copyright").append("<p class='tips'>本文最后一次更新为 <span>" + relative_time + "</span> 天前，文章中的某些内容可能已过时！</p>");
+            }
+          });   
+          
+          /*
+          * Keyboard shortcut bind: left and right
+          */
+
+          var previous_url = $("meta[property='og:previous_url']").attr('content');
+          var next_url = $("meta[property='og:next_url']").attr('content');
+
+          hotkeys('left', function(event, handler){
+              // Prevent the default refresh event under WINDOWS system
+              event.preventDefault();
+              if(previous_url){
+                  console.log('you pressed left!');
+                  window.location.href = previous_url;
+              }else {
+                  $("#no-previous").addClass("active");
+                  console.log('已经是最新一篇文章了！');
+                  console.log('Already the latest article！');
+                  setTimeout(function(){$("#no-previous").removeClass("active");}, 1500);
+              }
+          });
+
+          hotkeys('right', function(event, handler){
+              // Prevent the default refresh event under WINDOWS system
+              event.preventDefault();
+              if(next_url){
+                  console.log('you pressed right!');
+                  window.location.href = next_url;
+              }else {
+                  $("#no-next").addClass("active");
+                  console.log('已经是最后一篇文章了！');
+                  console.log('Already the last article！');
+                  setTimeout(function(){$("#no-next").removeClass("active");}, 1500);
+              }
+          });
+      });
+  </script>
+  <script src="https://at.alicdn.com/t/font_3046306_skfh9jzzbbf.js"></script>
+  
+  
+  
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+        if (navigator.serviceWorker.controller) {
+            console.log("An active service worker found, no need to register");
+        } else {
+            // Register the service worker
+            navigator.serviceWorker
+            .register("/sw.js", {
+                scope: "/"
+            })
+            .then(function (reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    }
+
+// 检测浏览器是否支持SW
+// if(navigator.serviceWorker != null){
+//     navigator.serviceWorker.register("/sw.js")
+//         .then(function(registartion){
+//             console.log('支持sw:',registartion.scope)
+//         })
+// } else {
+//     console.log('不支持sw')
+// }
+</script>
+	<!--
+Author: Ray-Eldath
+refer to:
+ - http://docs.mathjax.org/en/latest/options/index.html
+-->
+
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ["$", "$"] ],
+			displayMath: [ ["$$", "$$"] ],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+      });
+    </script>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.6/dist/mermaid.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            mermaid.initialize({
+                startOnLoad:true,
+                theme: "default",
+            });
+            mermaid.init(undefined, $('.mermaid2'));
+        });
+    </script>
+ 
+</body>
+
+</html>

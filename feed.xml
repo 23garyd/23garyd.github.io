@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://h2o-ac.pages.dev/" rel="alternate" type="text/html" /><updated>2022-09-11T18:01:04+00:00</updated><id>https://h2o-ac.pages.dev/feed.xml</id><title type="html">Gary Ding</title><subtitle>A personal technical blog for some interesting things in the learning process</subtitle><author><name>gary ding</name></author><entry><title type="html">Google Summer Of Code 2022 Report</title><link href="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html" rel="alternate" type="text/html" title="Google Summer Of Code 2022 Report" /><published>2022-09-10T00:00:00+00:00</published><updated>2022-09-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/gsoc-2022-report</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html"><![CDATA[<h2 id="overview">Overview</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.0">Jekyll</generator><link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://h2o-ac.pages.dev/" rel="alternate" type="text/html" /><updated>2022-10-24T18:57:16+00:00</updated><id>https://h2o-ac.pages.dev/feed.xml</id><title type="html">Gary Ding</title><subtitle>A personal technical blog for some interesting things in the learning process</subtitle><author><name>gary ding</name></author><entry><title type="html">Google Summer Of Code 2022 Report</title><link href="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html" rel="alternate" type="text/html" title="Google Summer Of Code 2022 Report" /><published>2022-09-10T00:00:00+00:00</published><updated>2022-09-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/gsoc-2022-report</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html"><![CDATA[<h2 id="overview">Overview</h2>
 <p>Over the past three months, I have had the valuable opportunity of contributing to an OpenCV open source project as a part of GSoC 2022. The main goal of this project was to create a cost-effective vision system for teams competing in the FIRST Robotics Competition by using the OpenCV DepthAI/OAK-D platform. Through this project, OAK-D can begin to be part of a solution to reduce build time by providing a generic and proven vision solution for all types of robots.</p>
 
 <h2 id="goals">Goals</h2>
@@ -136,7 +136,12 @@ From the RoboRIO simulator, the person detector’s results have been passed  to
   </li>
 </ul>
 
-<p><img src="/assets/img/nt3.png" alt="" /></p>]]></content><author><name>gary ding</name></author><category term="Java" /><category term="Python" /><category term="FRC" /><category term="Linux" /><summary type="html"><![CDATA[Google Summer Of Code Java version setup.]]></summary></entry><entry><title type="html">Google Summer Of Code 2022 Python Setup</title><link href="https://h2o-ac.pages.dev/gsoc-python-linux.html" rel="alternate" type="text/html" title="Google Summer Of Code 2022 Python Setup" /><published>2022-09-10T00:00:00+00:00</published><updated>2022-09-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/gsoc-python-linux</id><content type="html" xml:base="https://h2o-ac.pages.dev/gsoc-python-linux.html"><![CDATA[<blockquote>
+<p><img src="/assets/img/nt3.png" alt="" /></p>
+
+<h2 id="video-links">Video Links</h2>
+
+<p>Java FRC demo</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/Er9NpnCAC9k" frameborder="0"></iframe>]]></content><author><name>gary ding</name></author><category term="Java" /><category term="Python" /><category term="FRC" /><category term="Linux" /><summary type="html"><![CDATA[Google Summer Of Code Java version setup.]]></summary></entry><entry><title type="html">Google Summer Of Code 2022 Python Setup</title><link href="https://h2o-ac.pages.dev/gsoc-python-linux.html" rel="alternate" type="text/html" title="Google Summer Of Code 2022 Python Setup" /><published>2022-09-10T00:00:00+00:00</published><updated>2022-09-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/gsoc-python-linux</id><content type="html" xml:base="https://h2o-ac.pages.dev/gsoc-python-linux.html"><![CDATA[<blockquote>
   <p>Google Summer Of Code Python version setup.</p>
 </blockquote>
 
@@ -194,4 +199,391 @@ From the RoboRIO simulator, the person detector’s results have been passed  to
 
 <p>From the RoboRIO simulator, the detection results appear at the bottom of the NetworkTables window, in the row SmartDashboard. The values will update as the position of the detected person moves.</p>
 
-<p><img src="/assets/img/nt3.png" alt="" /></p>]]></content><author><name>gary ding</name></author><category term="Java" /><category term="Python" /><category term="FRC" /><category term="Linux" /><summary type="html"><![CDATA[Google Summer Of Code Python version setup.]]></summary></entry></feed>
+<p><img src="/assets/img/nt3.png" alt="" /></p>
+
+<h2 id="video-links">Video Links</h2>
+
+<p>Python FRC demo</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/kZoewUklqjo" frameborder="0"></iframe>]]></content><author><name>gary ding</name></author><category term="Java" /><category term="Python" /><category term="FRC" /><category term="Linux" /><summary type="html"><![CDATA[Google Summer Of Code Python version setup.]]></summary></entry><entry><title type="html">Renewable Recycling Robot with UR5e part 5</title><link href="https://h2o-ac.pages.dev/tech/fd-ur5-part5.html" rel="alternate" type="text/html" title="Renewable Recycling Robot with UR5e part 5" /><published>2022-07-10T00:00:00+00:00</published><updated>2022-07-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/fd-ur5-part5</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/fd-ur5-part5.html"><![CDATA[<h2 id="overview">Overview</h2>
+<p>Robotics are used a lot in enterprises for production. This enables them to produce at low cost with a constant quality. One would thus expect that given these advantages the smaller enterprises would also use robot systems. However, from the literature review it was found that the Small to Medium Enterprises are not using very much robotic systems. Usage of robotics could improve the production and help stay competitive. The problem is that current robot systems are not sufficiently flexible enough.  Therefore, to be cost efficient the robot system needs to be usable for different tasks with different positions, which are usually at different places in the factory. This requires repeated reconfiguration, which is very time consuming. If this is done often it cuts the effective working time and thus increases the payback time of the robot. In conclusion, the key to increasing the uptake of robotics in is to reduce the time required for reconfiguration.</p>
+
+<p>Vision systems mounted on the robot and in its surroundings can make the system a lot more flexible. If the robot for instance would be able to scan for position changes in setup and location would not be such a problem. The robot can be moved from location to another for different tasks. Or changes in the setup like different conveyor belts or machines that need to be tended could be automatically detected. If the robot could scan its new environment again and update the location this could save time.</p>
+
+<p>Vision systems can also be used to determine the location of the phones that needs to be grabbed. With this the exact location of the product does not need to be programmed. This gives less constraints to environment, as it is then not necessary to design a guiding system to put a product precisely in a spot so that the robot can grab it. By using vision systems the product can be in different locations in different orientations. This makes the system a lot more flexible and possibly also more robust.</p>
+
+<p>The goal of this project is to develop a industrial robot arms by automating two parts of the installation process:
+• Develop a system that can help with fast (extrinsic) calibration of a camera on a robot arm.The combined error should be below a 10mm level so that the camera can be used to grasp something using the camera with a Lacquey gripper.
+• Use the camera to automatically map the surroundings of the robot for obstacles. Mapping the surroundings (workspace) of the robot arm should be done in a safe way, during scanning the robot should not collide with an unknown object.</p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>The following are the key challenges</p>
+
+<ul>
+  <li>Camera pose estimation
+To determine the camera location on the robot the camera location relative to a fixed point needs to be known. Therefore the first part will discuss the different camera pose estimation methods. The different implementations will be discussed, tested in simulation and with a real camera on a robot.</li>
+</ul>
+
+<h2 id="implementation-1">Implementation</h2>
+<p>I chose to use Aruco Tag to get camera pose estimation as it is mature and widely used in industry.<br />
+I used the aruco.estimatePoseSingleMarkers() function to return the rvec rotation matrix and tvec displacement matrix of the found aurco label for conversion, find out the distance and angle of aurco relative to the camera cam, and realize the use of aurco for positioning.</p>
+
+<p>Here is what looks like</p>
+
+<p><img src="/assets/img/aruco-1.png" alt="" /></p>
+
+<p>The python code is</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">cv2.aruco</span> <span class="k">as</span> <span class="n">aruco</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="c1">#加载鱼眼镜头的yaml标定文件，检测aruco并且估算与标签之间的距离,获取偏航，俯仰，滚动
+</span>
+<span class="c1">#加载相机纠正参数
+</span><span class="n">cv_file</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">FileStorage</span><span class="p">(</span><span class="s">"yuyan.yaml"</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">FILE_STORAGE_READ</span><span class="p">)</span>
+<span class="n">camera_matrix</span> <span class="o">=</span> <span class="n">cv_file</span><span class="p">.</span><span class="n">getNode</span><span class="p">(</span><span class="s">"camera_matrix"</span><span class="p">).</span><span class="n">mat</span><span class="p">()</span>
+<span class="n">dist_matrix</span> <span class="o">=</span> <span class="n">cv_file</span><span class="p">.</span><span class="n">getNode</span><span class="p">(</span><span class="s">"dist_coeff"</span><span class="p">).</span><span class="n">mat</span><span class="p">()</span>
+<span class="n">cv_file</span><span class="p">.</span><span class="n">release</span><span class="p">()</span>
+
+
+<span class="c1">#默认cam参数
+# dist=np.array(([[-0.58650416 , 0.59103816, -0.00443272 , 0.00357844 ,-0.27203275]]))
+# newcameramtx=np.array([[189.076828   ,  0.    ,     361.20126638]
+#  ,[  0 ,2.01627296e+04 ,4.52759577e+02]
+#  ,[0, 0, 1]])
+# mtx=np.array([[398.12724231  , 0.      ,   304.35638757],
+#  [  0.       ,  345.38259888, 282.49861858],
+#  [  0.,           0.,           1.        ]])
+</span>
+
+
+<span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1"># cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
+# cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+# cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+</span>
+<span class="n">font</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span> <span class="c1">#font for displaying text (below)
+</span>
+<span class="c1">#num = 0
+</span><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">ret</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">cap</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">h1</span><span class="p">,</span> <span class="n">w1</span> <span class="o">=</span> <span class="n">frame</span><span class="p">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+    <span class="c1"># 读取摄像头画面
+</span>    <span class="c1"># 纠正畸变
+</span>    <span class="n">newcameramtx</span><span class="p">,</span> <span class="n">roi</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">getOptimalNewCameraMatrix</span><span class="p">(</span><span class="n">camera_matrix</span><span class="p">,</span> <span class="n">dist_matrix</span><span class="p">,</span> <span class="p">(</span><span class="n">h1</span><span class="p">,</span> <span class="n">w1</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">h1</span><span class="p">,</span> <span class="n">w1</span><span class="p">))</span>
+    <span class="n">dst1</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">undistort</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">camera_matrix</span><span class="p">,</span> <span class="n">dist_matrix</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">newcameramtx</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w1</span><span class="p">,</span> <span class="n">h1</span> <span class="o">=</span> <span class="n">roi</span>
+    <span class="n">dst1</span> <span class="o">=</span> <span class="n">dst1</span><span class="p">[</span><span class="n">y</span><span class="p">:</span><span class="n">y</span> <span class="o">+</span> <span class="n">h1</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span> <span class="o">+</span> <span class="n">w1</span><span class="p">]</span>
+    <span class="n">frame</span><span class="o">=</span><span class="n">dst1</span>
+
+    <span class="c1">#灰度化，检测aruco标签，所用字典为6×6----250
+</span>    <span class="n">gray</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+    <span class="n">aruco_dict</span> <span class="o">=</span> <span class="n">aruco</span><span class="p">.</span><span class="n">Dictionary_get</span><span class="p">(</span><span class="n">aruco</span><span class="p">.</span><span class="n">DICT_6X6_250</span><span class="p">)</span>
+    <span class="n">parameters</span> <span class="o">=</span>  <span class="n">aruco</span><span class="p">.</span><span class="n">DetectorParameters_create</span><span class="p">()</span>
+
+    <span class="c1">#使用aruco.detectMarkers()函数可以检测到marker，返回ID和标志板的4个角点坐标
+</span>    <span class="n">corners</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="n">rejectedImgPoints</span> <span class="o">=</span> <span class="n">aruco</span><span class="p">.</span><span class="n">detectMarkers</span><span class="p">(</span><span class="n">gray</span><span class="p">,</span><span class="n">aruco_dict</span><span class="p">,</span><span class="n">parameters</span><span class="o">=</span><span class="n">parameters</span><span class="p">)</span>
+
+<span class="c1">#    如果找不打id
+</span>    <span class="k">if</span> <span class="n">ids</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="c1">#获取aruco返回的rvec旋转矩阵、tvec位移矩阵
+</span>        <span class="n">rvec</span><span class="p">,</span> <span class="n">tvec</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">aruco</span><span class="p">.</span><span class="n">estimatePoseSingleMarkers</span><span class="p">(</span><span class="n">corners</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="n">camera_matrix</span><span class="p">,</span> <span class="n">dist_matrix</span><span class="p">)</span>
+        <span class="c1"># 估计每个标记的姿态并返回值rvet和tvec ---不同
+</span>        <span class="c1">#rvec为旋转矩阵，tvec为位移矩阵
+</span>        <span class="c1"># from camera coeficcients
+</span>        <span class="p">(</span><span class="n">rvec</span><span class="o">-</span><span class="n">tvec</span><span class="p">).</span><span class="nb">any</span><span class="p">()</span> <span class="c1"># get rid of that nasty numpy value array error
+</span>        <span class="c1">#print(rvec)
+</span>
+
+
+        <span class="c1">#在画面上 标注auruco标签的各轴
+</span>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rvec</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="n">aruco</span><span class="p">.</span><span class="n">drawAxis</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">camera_matrix</span><span class="p">,</span> <span class="n">dist_matrix</span><span class="p">,</span> <span class="n">rvec</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:],</span> <span class="n">tvec</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:],</span> <span class="mf">0.03</span><span class="p">)</span>
+            <span class="n">aruco</span><span class="p">.</span><span class="n">drawDetectedMarkers</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">corners</span><span class="p">,</span><span class="n">ids</span><span class="p">)</span>
+
+
+        <span class="c1">###### 显示id标记 #####
+</span>        <span class="n">cv2</span><span class="p">.</span><span class="n">putText</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="s">"Id: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ids</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">64</span><span class="p">),</span> <span class="n">font</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="mi">2</span><span class="p">,</span><span class="n">cv2</span><span class="p">.</span><span class="n">LINE_AA</span><span class="p">)</span>
+
+
+        <span class="c1">###### 角度估计 #####
+</span>        <span class="c1">#print(rvec)
+</span>        <span class="c1">#考虑Z轴（蓝色）的角度
+</span>        <span class="c1">#本来正确的计算方式如下，但是由于蜜汁相机标定的问题，实测偏航角度能最大达到104°所以现在×90/104这个系数作为最终角度
+</span>        <span class="n">deg</span><span class="o">=</span><span class="n">rvec</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="n">math</span><span class="p">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">180</span>
+        <span class="c1">#deg=rvec[0][0][2]/math.pi*180*90/104
+</span>        <span class="c1"># 旋转矩阵到欧拉角
+</span>        <span class="n">R</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">float64</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="p">.</span><span class="n">Rodrigues</span><span class="p">(</span><span class="n">rvec</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+        <span class="n">sy</span><span class="o">=</span><span class="n">math</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">R</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">R</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span>  <span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">singular</span><span class="o">=</span><span class="n">sy</span><span class="o">&lt;</span> <span class="mf">1e-6</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">singular</span><span class="p">:</span><span class="c1">#偏航，俯仰，滚动
+</span>            <span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">R</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">R</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">atan2</span><span class="p">(</span><span class="o">-</span><span class="n">R</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">sy</span><span class="p">)</span>
+            <span class="n">z</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">R</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">atan2</span><span class="p">(</span><span class="o">-</span><span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">atan2</span><span class="p">(</span><span class="o">-</span><span class="n">R</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">sy</span><span class="p">)</span>
+            <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="c1"># 偏航，俯仰，滚动换成角度
+</span>        <span class="n">rx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mf">180.0</span> <span class="o">/</span> <span class="mf">3.141592653589793</span>
+        <span class="n">ry</span> <span class="o">=</span> <span class="n">y</span> <span class="o">*</span> <span class="mf">180.0</span> <span class="o">/</span> <span class="mf">3.141592653589793</span>
+        <span class="n">rz</span> <span class="o">=</span> <span class="n">z</span> <span class="o">*</span> <span class="mf">180.0</span> <span class="o">/</span> <span class="mf">3.141592653589793</span>
+
+        <span class="n">cv2</span><span class="p">.</span><span class="n">putText</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="s">'deg_z:'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">ry</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s">'deg'</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">140</span><span class="p">),</span> <span class="n">font</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="n">cv2</span><span class="p">.</span><span class="n">LINE_AA</span><span class="p">)</span>
+        <span class="c1">#print("偏航，俯仰，滚动",rx,ry,rz)
+</span>
+
+        <span class="c1">###### 距离估计 #####
+</span>        <span class="n">distance</span> <span class="o">=</span> <span class="p">((</span><span class="n">tvec</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.02</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.0254</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>  <span class="c1"># 单位是米
+</span>        <span class="c1">#distance = (tvec[0][0][2]) * 100  # 单位是米
+</span>
+
+        <span class="c1"># 显示距离
+</span>        <span class="n">cv2</span><span class="p">.</span><span class="n">putText</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="s">'distance:'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s">'m'</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">110</span><span class="p">),</span> <span class="n">font</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="n">cv2</span><span class="p">.</span><span class="n">LINE_AA</span><span class="p">)</span>
+
+        <span class="c1">####真实坐标换算####（to do）
+</span>        <span class="c1"># print('rvec:',rvec,'tvec:',tvec)
+</span>        <span class="c1"># # new_tvec=np.array([[-0.01361995],[-0.01003278],[0.62165339]])
+</span>        <span class="c1"># # 将相机坐标转换为真实坐标
+</span>        <span class="c1"># r_matrix, d = cv2.Rodrigues(rvec)
+</span>        <span class="c1"># r_matrix = -np.linalg.inv(r_matrix)  # 相机旋转矩阵
+</span>        <span class="c1"># c_matrix = np.dot(r_matrix, tvec)  # 相机位置矩阵
+</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1">##### DRAW "NO IDS" #####
+</span>        <span class="n">cv2</span><span class="p">.</span><span class="n">putText</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="s">"No Ids"</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">64</span><span class="p">),</span> <span class="n">font</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="mi">2</span><span class="p">,</span><span class="n">cv2</span><span class="p">.</span><span class="n">LINE_AA</span><span class="p">)</span>
+
+
+    <span class="c1"># 显示结果画面
+</span>    <span class="n">cv2</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">"frame"</span><span class="p">,</span><span class="n">frame</span><span class="p">)</span>
+
+    <span class="n">key</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="mi">27</span><span class="p">:</span>         <span class="c1"># 按esc键退出
+</span>        <span class="k">print</span><span class="p">(</span><span class="s">'esc break...'</span><span class="p">)</span>
+        <span class="n">cap</span><span class="p">.</span><span class="n">release</span><span class="p">()</span>
+        <span class="n">cv2</span><span class="p">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+        <span class="k">break</span>
+
+    <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s">' '</span><span class="p">):</span>   <span class="c1"># 按空格键保存
+#        num = num + 1
+#        filename = "frames_%s.jpg" % num  # 保存一张图像
+</span>        <span class="n">filename</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">())[:</span><span class="mi">10</span><span class="p">]</span> <span class="o">+</span> <span class="s">".jpg"</span>
+        <span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">frame</span><span class="p">)</span>
+
+
+
+</code></pre></div></div>
+
+<ul>
+  <li>Extrinsic calibration
+To combine with the pose of the robot to get an estimate of the location of the camera on the robot. This will be tested in simulation and on a real robot arm.
+As the relative location of UR5-e and the test station can be moved for some reason the calibration needs to be done continuously to get most accurate location.</li>
+  <li>Workspace Mapping
+The last part discusses the methods that can be used to get a 3D map of the obstacles in the direct environment of the robot</li>
+</ul>
+
+<h2 id="video-links">Video Links</h2>
+
+<p>UR-5e Dual gripper control</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/_kVM-lex3vk" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview Robotics are used a lot in enterprises for production. This enables them to produce at low cost with a constant quality. One would thus expect that given these advantages the smaller enterprises would also use robot systems. However, from the literature review it was found that the Small to Medium Enterprises are not using very much robotic systems. Usage of robotics could improve the production and help stay competitive. The problem is that current robot systems are not sufficiently flexible enough. Therefore, to be cost efficient the robot system needs to be usable for different tasks with different positions, which are usually at different places in the factory. This requires repeated reconfiguration, which is very time consuming. If this is done often it cuts the effective working time and thus increases the payback time of the robot. In conclusion, the key to increasing the uptake of robotics in is to reduce the time required for reconfiguration.]]></summary></entry><entry><title type="html">Renewable Recycling Robot with UR5e Part 4</title><link href="https://h2o-ac.pages.dev/tech/fd-ur5-part4.html" rel="alternate" type="text/html" title="Renewable Recycling Robot with UR5e Part 4" /><published>2022-04-15T00:00:00+00:00</published><updated>2022-04-15T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/fd-ur5-part4</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/fd-ur5-part4.html"><![CDATA[<h2 id="overview">Overview</h2>
+<p>Vision based grasping is mainly achieved by changing the tool coordinate system or base coordinate system of the robot. The change of the position of the object is mainly the change of the X, Y, Z direction of its position. The base coordinate system can define the user coordinate system as needed. When the robot is equipped with multiple tables, selecting the user coordinate system can make the operation easier.
+In real world applications, we usually need to convert the pose of objects in the external environment observed by the camera from the camera coordinate system to the coordinate system of the robotic arm to assist the robotic arm to plan some subsequent actions (such as grasping). In order to get the transformation matrix of the robot coordinate system and the camera coordinate system, we also need to perform hand-eye calibration on the robot.</p>
+
+<h3 id="hand-eye-calibration">Hand-eye calibration</h3>
+<p>The camera is fixed at the end of the robot. In this case, the calibration plate needs to be fixed on the ground, and the transformation relationship between the robot coordinate system and the calibration plate coordinate system remains unchanged. The amount to be solved is the pose relationship between the camera coordinates and the robot end coordinate system</p>
+
+<h3 id="object-recognition-and-localization">Object recognition and localization</h3>
+<p>A very important part of visual grasping is the recognition of grasped objects. Whether it is a two-dimensional image or a three-dimensional point cloud, the corresponding function package can be found in ROS. If machine learning is required, it can also be easily implemented by integrating Tensorflow.</p>
+
+<h3 id="path-planning">path planning</h3>
+
+<p>Moveit! provides developers with an easy-to-use integrated development platform. It consists of a series of functional packages for mobile operations, including motion planning, operational control, 3D perception, kinematics, control and navigation algorithms, etc. The implementation of these functional algorithms is integrated in Moveit! by means of plug-ins, and provides a friendly GUI, which can be widely used in industry, commerce, R&amp;D and other fields.</p>
+
+<p>The flow diagram is</p>
+
+<p><img src="/assets/img/ur5-grasp-1.png" alt="" /></p>
+
+<h2 id="video-links">Video Links</h2>
+
+<p>Python UR5 demo</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/u8fQflIG1tk" frameborder="0"></iframe>]]></content><author><name>gary ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview Vision based grasping is mainly achieved by changing the tool coordinate system or base coordinate system of the robot. The change of the position of the object is mainly the change of the X, Y, Z direction of its position. The base coordinate system can define the user coordinate system as needed. When the robot is equipped with multiple tables, selecting the user coordinate system can make the operation easier. In real world applications, we usually need to convert the pose of objects in the external environment observed by the camera from the camera coordinate system to the coordinate system of the robotic arm to assist the robotic arm to plan some subsequent actions (such as grasping). In order to get the transformation matrix of the robot coordinate system and the camera coordinate system, we also need to perform hand-eye calibration on the robot.]]></summary></entry><entry><title type="html">Renewable Recycling Robot with UR5e Part 3</title><link href="https://h2o-ac.pages.dev/tech/fd-ur5-part3.html" rel="alternate" type="text/html" title="Renewable Recycling Robot with UR5e Part 3" /><published>2022-01-18T00:00:00+00:00</published><updated>2022-01-18T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/fd-ur5-part3</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/fd-ur5-part3.html"><![CDATA[<h2 id="overview">Overview</h2>
+<p>In this company I used RoboDK, which is a 3D simulation and offline/online programming environment, for robot simulation. Real time online programming allows executing the movements on the real robot at the same time as it is being simulated. Modifications in the original program can be made in real time and synchronization between robots can be easily managed. This is achieved by using RoboDK Software.</p>
+
+<p>To make this work, I need to run the RoBoDK running from a Ubuntu 18.04 notebook and then connect with the real robot Universal Robot UR-5e. The UR-5e needs to be setup as remote mode. Here is the steps</p>
+
+<p>Find Remote Control in System and click Enable. Then teach pendant icon will appear on the upper right.</p>
+
+<p><img src="/assets/img/ur5-remote-1.png" alt="" /></p>
+
+<p>Choose to enable the remote control</p>
+
+<p><img src="/assets/img/ur5-remote-2.png" alt="" /></p>
+
+<p>Click the teach pendant icon on the upper right and select Remote Control</p>
+
+<p>Choose from network setting and setup a static IP for this robot.</p>
+
+<p><img src="/assets/img/ur5-remote-3.png" alt="" /></p>
+
+<p>From network menu set a static IP for this UR5e.</p>
+
+<p><img src="/assets/img/ur5-ip-1.png" alt="" /></p>
+
+<p><img src="/assets/img/ur5-ip-2.png" alt="" /></p>
+
+<p>Then from the roboDK software, choose to connect Robot. Make sure the IP is what was setup previously. If connect successfully then the status bar will become green.</p>
+
+<p><img src="/assets/img/robodk-1.png" alt="" /></p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>Here is the online programming prototype what I created for pick and place.</p>
+
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/cvfuETQallM" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview In this company I used RoboDK, which is a 3D simulation and offline/online programming environment, for robot simulation. Real time online programming allows executing the movements on the real robot at the same time as it is being simulated. Modifications in the original program can be made in real time and synchronization between robots can be easily managed. This is achieved by using RoboDK Software.]]></summary></entry><entry><title type="html">Renewable Recycling Robot with UR5e Part 2</title><link href="https://h2o-ac.pages.dev/tech/fd-ur5-part2.html" rel="alternate" type="text/html" title="Renewable Recycling Robot with UR5e Part 2" /><published>2021-07-06T00:00:00+00:00</published><updated>2021-07-06T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/fd-ur5-part2</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/fd-ur5-part2.html"><![CDATA[<h2 id="overview">Overview</h2>
+
+<p>Collaborative robot are changing the way people work in factories by allowing for much more interaction between robots and humans. In addition, they offer multiple levels of collaborative operation. While traditional work cells separate robots from workers entirely, collaborative robot are built to share the workplace, working next to humans.</p>
+
+<p><img src="/assets/img/garysimulation.jpg" alt="" /></p>
+
+<p>One of the most helpful aspects of using simulation for automation design is simulation. It enables users to examine what the operator can see. Clear line-of-sight allows the operator to work more efficiently. A good automation design and robot program assures good visibility and reachability. Collaborative robot operations can be verified using the simulation.</p>
+
+<p>When placed phones in the processing unit, the robot needs to reach all of its locations that enable it to perform the given tasks, such as is pick up, drop off, plug phone cable, test, etc. Simulation allows the user to place the robot in a position where all of these locations are reachable , and at the same time maintain smooth robot motion, minimize cycle time and reduce the risk of injury to the operator.</p>
+
+<p>RoboDK is a powerful simulator for industrial robots and robot programming. RoboDK’s simulation and offline programming tools allows developers to program UR robots outside the production environment, eliminating production downtime caused by shop floor programming.</p>
+
+<p>I happen to found that a team at NASA’s Langley Research Center is using multiple robots and RoboDK to automate and streamline the inspection of aircraft fuselages. And I am so delighted that the expereince I learned can be very useful and I am so happy to be able to learn it from both simulation and real hardware.</p>
+
+<p><img src="/assets/img/NASA-Dual-Robot-Inspection.png" alt="" /></p>
+<ul>
+  <li>NASA team use RoboDK to operate Universal Robot*</li>
+</ul>
+
+<h2 id="implementation">Implementation</h2>
+<p>Here are simulations created wth RoboDK.</p>
+
+<p>UR5 Simulation demo</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/kGwvTC4vbK0" frameborder="0"></iframe>
+
+<p>UR5 Simulation demo</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/RcqogOs3VTA" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview]]></summary></entry><entry><title type="html">Renewable Recycling Robot with UR5e Part 1</title><link href="https://h2o-ac.pages.dev/tech/fd-ur5-part1.html" rel="alternate" type="text/html" title="Renewable Recycling Robot with UR5e Part 1" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/fd-ur5-part1</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/fd-ur5-part1.html"><![CDATA[<h2 id="overview">Overview</h2>
+<p>I have been selected to participate a research project by a renewable smartphone company to develop the next generation robot automation system for renewable smart phones. The goal is to use Universal Robot UR-5e to automate the renewable electronics in warehouse. The challenge When talking about industrial robotics , we tend to think about robots in car factories or carrying out construction tasks. However, this one is to improve the processing speed and make the old phones to be reused. The solution is to use robotic arms which are  able to identify, grip and move waste materials intended for recycling.</p>
+
+<p><img src="/assets/img/fd_robodk2.jpg" alt="" /></p>
+
+<p>With increased customization for both hardware and software robots can offer a flexible, scalable, compact and cost-effective production line alternative to older machinery that require large floor space, are difficult to adapt and include higher maintenance costs.</p>
+
+<p>In the case of phone renewable industry there are no off-the-shelf robotic solutions that can cover all the production steps in the testing and cleaning processing. Introducing collaborative robots into the processing could help to promote higher throughput in safety and human-working conditions in the industry and make automation more affordable for smaller production plants.</p>
+
+<p>This work explores the potentially novel use of collaboration robot(CoBot) in the warehouse processing context as a possibility to enable a scalable automation for processors, thereby contributing to sustainability and security of supply in the sector.</p>
+
+<p>In the renewable electronics industry there are different levels of automation:</p>
+<ul>
+  <li>
+    <p>Low automation: limited automation tools implemented where manual labour carries out major processes such as move electronics from tests stations and perform phone surface cleaning and condition grading.</p>
+  </li>
+  <li>
+    <p>Semi-automation: some processes automated, with manual labour needed during or in between test stations where humans use electric test stations for part of the process like surface cleaning and polishing.</p>
+  </li>
+  <li>
+    <p>Full automation: processes automated as far as possible, and robotics and data tools implemented, where  specialized machinery (including robotics, conveyers) has been able to demonstrate a fully autonomous line for primary  processing that offered better yield and reduced labour cost,</p>
+  </li>
+</ul>
+
+<p>The challenge ahead is to improve the precision of technology and increase the UPH (unit per hour). The robot arm makes use of computer vision and deep learning artificial system to identify the collected object and create optimal path for factory processing process.</p>
+
+<h2 id="research-areas">Research areas</h2>
+
+<ol>
+  <li>Study the Aruco tag to help precision localization of electronics.</li>
+  <li>QR code recognition and center localization of phones</li>
+  <li>Vision aided pick and place with UR-5e</li>
+  <li>Python centralized controller from co-ordinate robots and status monitor.</li>
+  <li>Robot simulation to optimize the process before hardware integration</li>
+  <li>Intelligent conveyor integration</li>
+  <li>Optimal Path Algorithm for scheduling multiple rails robot arms</li>
+</ol>
+
+<h2 id="video-links">Video Links</h2>
+
+<p>Here is the video of what has been achieved with UR5 Pick and Place demo</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/TwaLIdFVCtQ" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview I have been selected to participate a research project by a renewable smartphone company to develop the next generation robot automation system for renewable smart phones. The goal is to use Universal Robot UR-5e to automate the renewable electronics in warehouse. The challenge When talking about industrial robotics , we tend to think about robots in car factories or carrying out construction tasks. However, this one is to improve the processing speed and make the old phones to be reused. The solution is to use robotic arms which are able to identify, grip and move waste materials intended for recycling.]]></summary></entry><entry><title type="html">Eco-Friendly Farm Robot PoC Part 1</title><link href="https://h2o-ac.pages.dev/tech/opencv-rover-part1.html" rel="alternate" type="text/html" title="Eco-Friendly Farm Robot PoC Part 1" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/opencv-rover-part1</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/opencv-rover-part1.html"><![CDATA[<h2 id="introduction">Introduction</h2>
+
+<p>Autonomous mobile robots can be incorporated into a variety of applications, ranging from logistics and maintenance, to intelligence gathering and surveillance. The goal of this research is to prototype and demonstrate the autonomous capabilities for a farm environment.</p>
+
+<p>This project started as a OpenCV sponsored project to promote the low cost Farm robot technologies to help the small farmers to save cost and improve efficiency.  One of the difficulties with robotics is that it usually requires intricate knowledge of hardware level details and expensive sensors in order to even begin developing robotic systems. Whether it’s communicating with motor controllers, utilizing servos,interfacing with sensors or implementing hardware acceleration for improved computing, learning robotics often requires graduate level knowledge of these topics with expensive Lidar hardware. This means that some robotics topics and capability can be out of reach for most farm users, due to its steep learning curve and cost. Besides that these robot are not eco-friendly as they consume more energy to achieve even simple work.</p>
+
+<p>This project is aimed to provide solution with low-cost hardware. We are using the Traxxas X-MAXX 1:5 scale RC car as the platform to demonstrate the autonomous features. The autonomous software stack is composed of a Jetson Xavier and a Pixhawk. Interfacing with Pixhawk FC hardware is achieved by means of MAVROS. MAVROS provides a mechanism for opening the serial port for sending and receiving MAVLink packets to and from the Pixhawk. On the Jetson computer this is typically carried out through a Universal Asynchronous Receiver-Transmitter (UART) interface, but can also be accomplished by means of a Universal Serial Bus (USB) to serial converter. At the other end of the communication link, the connection is completed at the Pixhawk’s TELEM2 port, which is intended for this purpose of exchanging MAVLink packets with a companion computer. Setup of this interface requires selecting the appropriate baud rate, or data transfer rate, typically 921,600 bits per second.</p>
+
+<p><img src="/assets/img/pixhawk.png" alt="" /></p>
+
+<p>The steering and throttle were controlled by a Pixhawk flight controller. Sensors include a LiDAR, depth camera, tracking camera, and an IMU. Using existing ROS packages such as Cartographer and TEB planner, we implemented ROS nodes for accomplishing the below tasks.</p>
+
+<h2 id="milestones">Milestones</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Design Rover hardware BOM and assembly a few Chassis
+2. Setup Rover software and make a autonomous drive with GNSS RTK
+3. Integrate the data flow framework with ODD person detector
+4. DepthAI Oak-D integration to achieve the OOD person detector
+5. DepthAI Oak-D integration to achieve Obstacle Avoidance
+</code></pre></div></div>
+
+<h2 id="research-areas">Research Areas</h2>
+
+<ol>
+  <li>Study the SLAM based on laser rangefinder in outdoor environment</li>
+  <li>Integrate multiple sensors onto an autonomous rover</li>
+  <li>Implement sensory data processing and obstacles avoidance</li>
+  <li>Develop planning algorithms so that the vehicles can react to new obstacles and change their trajectories in real time</li>
+  <li>Verify the functionality of the resulting system in real environment</li>
+</ol>
+
+<h2 id="video-links">Video Links</h2>
+
+<p><img src="/assets/img/farm_rover_team1.jpg" alt="" />
+<em>Team worked on GPS RTK issues</em></p>
+
+<p><img src="/assets/img/farm_rover_team2.jpg" alt="" />
+<em>Team worked on GPS RTK issues</em></p>
+
+<p><img src="/assets/img/garyding_xmaxx_working.jpg" alt="" />
+<em>Gary worked on ROS topic to send Mavlink message Pixhawk</em></p>
+
+<p><img src="/assets/img/garyding_bk3.jpg" alt="" />
+<em>Tested global planner on Evergreen College</em></p>
+
+<h2 id="rover-setup">Rover Setup</h2>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/_r4b08d2SfI" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Java" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">Eco-Friendly Farm Robot PoC Part 2</title><link href="https://h2o-ac.pages.dev/tech/opencv-rover-part2.html" rel="alternate" type="text/html" title="Eco-Friendly Farm Robot PoC Part 2" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/opencv-rover-part2</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/opencv-rover-part2.html"><![CDATA[<h2 id="navigation">Navigation</h2>
+
+<p>Agricultural robots are widely used nowadays to provide people with an alternative solution to conduct repetitive and high-risk operations in many indoor and outdoor agricultural environments. However, the ability of agricultural robots to navigate or move autonomously has always been a challenge due to the complexity of agricultural environments, especially the Global Positioning System (GPS)-denied environment. Localization, mapping, path planning and obstacle avoidance are the essential capabilities for robots to navigate from the starting point to the destination autonomously and successfully. Among them, localizing accurately and generating a globally consistent map of the surroundings in real-time are critical tasks to improve the performance of agricultural robots. Therefore, it is crucial to propose an efficient and accurate real-time localization and mapping method to meet the needs of autonomous navigation in agricultural environments</p>
+
+<p>SLAM is concerned with the problem of building a map of an unknown environment by a mobile robot while at the same time localizing the robot relative to the map. SLAM consists of multiple parts: Landmark extraction, data association, state estimation and land- marks update. Each part can be solved by different way and there is a huge amount of different hardware that can be used. The main part of the SLAM process is extended Kalman filter (EKF), which always holds the current estimated position.</p>
+
+<p>For the positioning and localization of the rover we use Real Time Kinematic (RTK) GPS. It’s a technique used to enhance the precision of position data from satellite-based positioning systems such as GPS, GLONASS or Galileo. It uses measurements of the phase of the signal carrier wave, rather than the information content of the signal, and it provides centimeter-level accuracy</p>
+
+<p>We obtain data from the surroundings around the robot from a light detection and ranging device (LiDAR). It uses light in the form of a pulsed laser to measure range of objects around and produces thousands of points per seconds. These points usually also carry some additional information such as their intensity or a number of return. With these information we should be able to generate three-dimensional model of the environment and also its surface characteristics [8].</p>
+
+<p><img src="/assets/img/rplidar-s2.png" alt="" />
+<em>The initial lidar model this project evaluated</em></p>
+
+<p>The third and also the last absolutely necessary sensor is an Inertial measurement unit (IMU). It is attached to LiDAR and tells us, how LiDAR is positioned at the moment. Points produced by LiDAR are relative to its centre at the time of the measurement, points produced by RTK GPS are relative to base (Chap. 3.3]), and IMU measurements are relative to IMU initial position. These measurement must be transformed into common coordinate system in order to perform calculations upon them.</p>
+
+<p>By using these three sensors and combining them together we can explicitly create 3D maps (point clouds) in real time. We should also be able to navigate in them and also know our location at every moment.</p>
+
+<p><img src="/assets/img/garyding_xmaxx_parking.jpg" alt="" />
+<em>Gary was testing the autonomous drive in parking lot</em></p>
+
+<p><img src="/assets/img/gary_xmaxx_demo.jpg" alt="" />
+<em>OpenCV Founder Gary Bradski and teams were on the demo field</em></p>
+
+<h2 id="video-links">Video Links</h2>
+
+<p>Rover Setup</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/rqqbVXaiuio" frameborder="0"></iframe>
+
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/u-RKHTTs0DY" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Java" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Navigation]]></summary></entry></feed>
