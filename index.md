@@ -15,6 +15,9 @@ cover_author_link: 'https://unsplash.com/@colinandmeg'
 
 1. [**Futuredial Universal Robot Automation**](tech/fd-ur5-part1.html) - The market leading company that provides robot automation solutions for renewable electronics. I worked on a 6-DOF Robot Simulation and software control with an Optimized Path Algorithm and Computer Vision. 
 2. [**OpenCV Ironoak Library**](tech/gsoc-2022-report.html) -  Through Google's Summer of Code program, I worked with developers from OpenCV to create a computer vision toolkit for FRC robotics teams with Python, Java and Linux.
+3. [**Embodied Robot for Reverse Logistics - UMI**](tech/umi-2024-report.html) -  To utilize the Stanford Universal Manipulation Interface (UMI) robot to automate tasks in reverse logistics, such as sorting, handling, and processing returned goods in a warehouse setting.
+3. [**Embodied Robot for Reverse Logistics- Aloha**](tech/aloha-2024-report.html) -  The core of the project is an embodied robot equipped with mobility and manipulation capabilities to perform various reverse logistics tasks. The robot will use sensors, cameras, and AI-based algorithms to identify and classify different types of returns, from packaging materials to defective or end-of-life products. To apply the Stanford ALOHA project's methodologies and tools to optimize reverse logistics processes, such as the collection, sorting, refurbishment, recycling, and redistribution of returned products.
+
 
 
 # Projects
