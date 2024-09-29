@@ -9,7 +9,7 @@ cover_author_link: 'https://unsplash.com/@colinandmeg'
 
 # About me
 
-&emsp;&emsp;Hello! I'm Gary, and I'm a 17 year old from San Jose, California. I am a 12th grade student currently studying at Harker. Six years ago, I first started playing with robots. Six years later, I have designed and built competition bots with friends at school, worked on my own personal projects, and worked with professionals in the industry to fulfill their robotic needs. My work revolves around finding ways to use my skills in CAD design, coding, and mechanical fabrication to alleviate environmental ills. Feel free to take a look at what I've done in this site! 
+&emsp;&emsp;Hello! I’m Gary, a 19-year-old sophomore majoring in Computer Science and Environmental Science at Dartmouth College, originally from San Jose, California. My journey with robotics began eight years ago when I first participated in FTC (First Tech Challenge) competitions, which sparked a deep interest in intelligent robots. During high school and college, I interned at a robotics company where I worked on projects involving papers from Stanford, including replication work on ALOHA and UMI. My tasks ranged from software debugging to data collection and optimization. Through my work, I aim to apply these skills to address environmental challenges. Feel free to explore my projects on this site! 
 
 # Internships
 
