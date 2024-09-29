@@ -5,9 +5,9 @@
     <description>A personal technical blog for some interesting things in the learning process</description>
     <link>https://h2o-ac.pages.dev//</link>
     <atom:link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 03 Sep 2024 06:04:03 +0000</pubDate>
-    <lastBuildDate>Tue, 03 Sep 2024 06:04:03 +0000</lastBuildDate>
-    <generator>Jekyll v4.3.3</generator>
+    <pubDate>Sun, 29 Sep 2024 22:42:11 +0000</pubDate>
+    <lastBuildDate>Sun, 29 Sep 2024 22:42:11 +0000</lastBuildDate>
+    <generator>Jekyll v4.3.4</generator>
     
       <item>
         <title>Google Summer Of Code 2022 Python Setup</title>
