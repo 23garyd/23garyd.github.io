@@ -35,8 +35,9 @@ cover_author_link: 'https://unsplash.com/@colinandmeg'
 
 # Skills
 
-- Java, Python
+- Java, Python, ML
 - RoboDK simulation, Universal Robot Script
 - Pixhawk, Ardupilot, Robot Kinematics 
 - OpenCV , TensorFlow/Neural Network
+- Transformer, LLM
 
