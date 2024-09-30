@@ -1,6 +1,18 @@
 [
   
     {
+      "title"    : "Universal Manipulation Interface",
+      "tags"     : "Python Linux",
+      "url"      : "/tech/umi-part1.html"
+    } ,
+  
+    {
+      "title"    : "LeRobot",
+      "tags"     : "Python Linux",
+      "url"      : "/tech/lerobot.html"
+    } ,
+  
+    {
       "title"    : "Google Summer Of Code 2022 Python Setup",
       "tags"     : "Java Python FRC Linux",
       "url"      : "/gsoc-python-linux.html"

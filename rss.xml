@@ -5,9 +5,90 @@
     <description>A personal technical blog for some interesting things in the learning process</description>
     <link>https://h2o-ac.pages.dev//</link>
     <atom:link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 29 Sep 2024 22:42:11 +0000</pubDate>
-    <lastBuildDate>Sun, 29 Sep 2024 22:42:11 +0000</lastBuildDate>
+    <pubDate>Mon, 30 Sep 2024 00:18:17 +0000</pubDate>
+    <lastBuildDate>Mon, 30 Sep 2024 00:18:17 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>Universal Manipulation Interface</title>
+        <description>&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;This project began as research project for automated the recycle process in warehouse.&lt;/p&gt;
+
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/gary-umi2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First I downloaded the original model&lt;/p&gt;
+
+&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtube.com/shorts/PKQV8KJgFq8?feature=share&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;then I collected 50 samples&lt;/p&gt;
+
+&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtu.be/aLj_dE-MMGo&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;and the results are&lt;/p&gt;
+
+&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtube.com/shorts/WUKvjjuD0h0?feature=share&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;then I adjusted the environment and collected 200 samples and the result is&lt;/p&gt;
+
+&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtube.com/shorts/RA8jz3u729M?feature=share&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtu.be/iCHoXkndNiE&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtu.be/aX9tZiq7xyw&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtu.be/KtYa5oRys5Q&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+        <link>https://h2o-ac.pages.dev/tech/umi-part1.html</link>
+        <guid isPermaLink="true">https://h2o-ac.pages.dev/tech/umi-part1.html</guid>
+        
+        <category>Python</category>
+        
+        <category>Linux</category>
+        
+        
+        <category>tech</category>
+        
+      </item>
+    
+      <item>
+        <title>LeRobot</title>
+        <description>&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;This project began as research project for automated the recycle process in warehouse. Hugging Face’s LeRobot project is an open source project on machine learning models for real-world robotics, especially within domains like imitation and reinforcement learning. It is a wrapper on top of Stanford paper ALOHA. Stanford ALOHA refers to a series of robotics systems, with the primary goal of creating low-cost, open-source hardware for robotics research. ALOHA initially started as a bimanual teleoperation system but has since evolved into Mobile ALOHA, which combines mobility with advanced whole-body manipulation capabilities. Mobile ALOHA is designed to perform complex real-world tasks like cooking, cleaning, and navigating environments, making it useful for research in areas such as imitation learning and human-robot interaction.&lt;/p&gt;
+
+&lt;p&gt;The deliverable from this project is to pick and place recycled phones.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/gary-lerobot1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/gary-lerobot2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/gary-lerobot3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The robot arms are built based on koch 1.1 version.&lt;/p&gt;
+
+&lt;p&gt;After the data collection and training the final result is&lt;/p&gt;
+
+&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtu.be/BNLq1-376q4&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+</description>
+        <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+        <link>https://h2o-ac.pages.dev/tech/lerobot.html</link>
+        <guid isPermaLink="true">https://h2o-ac.pages.dev/tech/lerobot.html</guid>
+        
+        <category>Python</category>
+        
+        <category>Linux</category>
+        
+        
+        <category>tech</category>
+        
+      </item>
     
       <item>
         <title>Google Summer Of Code 2022 Python Setup</title>
@@ -656,89 +737,6 @@ To install all required Python modules you can use:&lt;/p&gt;
         <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
         <link>https://h2o-ac.pages.dev/tech/opencv-rover-part6.html</link>
         <guid isPermaLink="true">https://h2o-ac.pages.dev/tech/opencv-rover-part6.html</guid>
-        
-        <category>Java</category>
-        
-        <category>Python</category>
-        
-        <category>Linux</category>
-        
-        
-        <category>tech</category>
-        
-      </item>
-    
-      <item>
-        <title>Eco-Friendly Farm Robot PoC Part 4</title>
-        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This part talks about object detection techniques.&lt;/p&gt;
-
-&lt;p&gt;For the rover to safely move around it’s necessary to avoid collisions with obstacles. One approach is LIdar based. Here we are trying to locate and to segment individual obstacles. The environment is represented by an OcTree which is created by OctoMap and rover will take all the occupied voxels as one obstacle instead. Therefore, the rover has to move in a way it doesn’t intersect with the OctoMap. The OcTree is used because of low memory requirements and probability approach in the environment modelling.&lt;/p&gt;
-
-&lt;p&gt;When we started sensing the environment, the framework could only create the point clouds in real time. That turned out to be very inefficient because point cloud was very difficult to analyse. To overcome this issue the possibility for sensors raw data acquisition was implemented. After that, during offline point cloud creation, we identified and fixed several both software and hardware errors. The software ones were usually related to issues that were omitted in invited solutions, e.g. alignment between coordinate systems of different sensors or wrong time frames adjustments. The hardware errors included wrong sensors placement or use of inadequate devices (radios).
-Once we were able to produce correct point clouds, we started integrating the software required for collision avoidance and path planning. We modified specific parts of TAF system, whose main focus were aerial vehicles, to match our requirements for rover. We implemented OctoMap. We tested and incorporated Flexible Collision Library into collision detection module of TAF. We found out that a point cloud has to be filtered, downsampled and the ground has to be segmented before inserting into OctoMap. Otherwise the collision detection would not work in the desired manner.
-Last thing was the modification of planning algorithms in TAF for rover usage. Firstly we implemented a simple planner, but since it turned out not to be working properly with the higher amount of present obstacles, with few modifications we inte- grated already available RRT* planner.
-The result is a robust software framework that could be used in applications of un- manned ground vehicles equipped with LiDAR, IMU and RTK GPS, for path planning and collision avoidance.&lt;/p&gt;
-
-&lt;p&gt;Another approach is vision based. It can be achieved by using stereo camera such as D435 or Oak-D.&lt;/p&gt;
-
-&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Design Rover hardware BOM and assembly a few Chassis to evaluate
-- Setup Rover software and make a autonomous drive with GNSS RTK
-- Integrate the data flow framework with ODD person detector
-- DepthAI Oak-D integration to achieve the OOD person detector
-- DepthAI Oak-D integration to achieve Obstacle Avoidance
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;video-links&quot;&gt;Video Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/rover_vfh_2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Rover Setup&lt;/p&gt;
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/E74HYwpXjos&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
-</description>
-        <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
-        <link>https://h2o-ac.pages.dev/tech/opencv-rover-part4.html</link>
-        <guid isPermaLink="true">https://h2o-ac.pages.dev/tech/opencv-rover-part4.html</guid>
-        
-        <category>Java</category>
-        
-        <category>Python</category>
-        
-        <category>Linux</category>
-        
-        
-        <category>tech</category>
-        
-      </item>
-    
-      <item>
-        <title>Eco-Friendly Farm Robot PoC Part 3</title>
-        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;This blog explains how to setup an Intel Realsense Depth Camera to be used for obstacle avoidance. This method uses a python script running on a companion computer Jetson Xavier to send distance information to pixhawk.&lt;/p&gt;
-
-&lt;p&gt;Two Intel cameras, the RealSense D435 depth camera and the T265 tracking camera, were used in order to enhance the rover’s three-dimensional mapping capabilities. The depth camera provides RGB and depth images of its surroundings, useful for creating a visual 3D map. The tracking camera includes two fisheye cameras, an additional inertial measurement unit (IMU), and on-board SLAM. These are all
-accessed via ROS.&lt;/p&gt;
-
-&lt;p&gt;The on-board Jetson computer ran Robot Operating System (ROS), a flexible framework for writing robotics programs that allows Ubuntu Linux to control the physical components of the rover.&lt;/p&gt;
-
-&lt;p&gt;Obstacle avoidance within PX4 can be achieved in two different ways: offboard Mode or mission Mode.&lt;/p&gt;
-
-&lt;p&gt;Offboard mode avoidance ensures that the desired route comes from a ROS node. This is passed into an obstacle avoidance module, which is another ROS node. The avoidance software sends the planned path to the as a stream of SET POSITION TARGET LOCAL NED messages. Since the navigation is done within ROS for offboard mode avoidance, it is possible to use all sensors that can be used to detect an obstacle as within ROS&lt;/p&gt;
-
-&lt;p&gt;Mission mode avoidance is the other solution. PX4 communicates with the obstacle avoidance software using an implementation of the MAVLink path planning protocol. It is different in the sense that a waypoint is reached when the vehicle is within the goal radius of its goal not taking the heading into consideration. This is because the obstacle avoidance algorithm has full control of the vehicle heading. PX4 then emits a new waypoint when the goal is reached via the TRAJECTORY REPRESENTATION WAYPOINTS.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/rover_vfh_2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;rover-setup&quot;&gt;Rover Setup&lt;/h2&gt;
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/E74HYwpXjos&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
-</description>
-        <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
-        <link>https://h2o-ac.pages.dev/tech/opencv-rover-part3.html</link>
-        <guid isPermaLink="true">https://h2o-ac.pages.dev/tech/opencv-rover-part3.html</guid>
         
         <category>Java</category>
         

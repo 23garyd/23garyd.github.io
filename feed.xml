@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://h2o-ac.pages.dev/" rel="alternate" type="text/html" /><updated>2024-09-29T22:42:11+00:00</updated><id>https://h2o-ac.pages.dev/feed.xml</id><title type="html">Gary Ding</title><subtitle>A personal technical blog for some interesting things in the learning process</subtitle><author><name>gary ding</name></author><entry><title type="html">Google Summer Of Code 2022 Report</title><link href="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html" rel="alternate" type="text/html" title="Google Summer Of Code 2022 Report" /><published>2022-09-10T00:00:00+00:00</published><updated>2022-09-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/gsoc-2022-report</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html"><![CDATA[<h2 id="overview">Overview</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://h2o-ac.pages.dev/" rel="alternate" type="text/html" /><updated>2024-09-30T00:18:17+00:00</updated><id>https://h2o-ac.pages.dev/feed.xml</id><title type="html">Gary Ding</title><subtitle>A personal technical blog for some interesting things in the learning process</subtitle><author><name>gary ding</name></author><entry><title type="html">Universal Manipulation Interface</title><link href="https://h2o-ac.pages.dev/tech/umi-part1.html" rel="alternate" type="text/html" title="Universal Manipulation Interface" /><published>2024-09-15T00:00:00+00:00</published><updated>2024-09-15T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/umi-part1</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/umi-part1.html"><![CDATA[<h2 id="overview">Overview</h2>
+
+<p>This project began as research project for automated the recycle process in warehouse.</p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p><img src="/assets/img/gary-umi2.jpg" alt="" /></p>
+
+<p>First I downloaded the original model</p>
+
+<iframe type="text/html" width="100%" height="385" src="https://youtube.com/shorts/PKQV8KJgFq8?feature=share" frameborder="0"></iframe>
+
+<p>then I collected 50 samples</p>
+
+<iframe type="text/html" width="100%" height="385" src="https://youtu.be/aLj_dE-MMGo" frameborder="0"></iframe>
+
+<p>and the results are</p>
+
+<iframe type="text/html" width="100%" height="385" src="https://youtube.com/shorts/WUKvjjuD0h0?feature=share" frameborder="0"></iframe>
+
+<p>then I adjusted the environment and collected 200 samples and the result is</p>
+
+<iframe type="text/html" width="100%" height="385" src="https://youtube.com/shorts/RA8jz3u729M?feature=share" frameborder="0"></iframe>
+
+<iframe type="text/html" width="100%" height="385" src="https://youtu.be/iCHoXkndNiE" frameborder="0"></iframe>
+
+<iframe type="text/html" width="100%" height="385" src="https://youtu.be/aX9tZiq7xyw" frameborder="0"></iframe>
+
+<iframe type="text/html" width="100%" height="385" src="https://youtu.be/KtYa5oRys5Q" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview]]></summary></entry><entry><title type="html">LeRobot</title><link href="https://h2o-ac.pages.dev/tech/lerobot.html" rel="alternate" type="text/html" title="LeRobot" /><published>2024-06-15T00:00:00+00:00</published><updated>2024-06-15T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/lerobot</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/lerobot.html"><![CDATA[<h2 id="overview">Overview</h2>
+
+<p>This project began as research project for automated the recycle process in warehouse. Hugging Face’s LeRobot project is an open source project on machine learning models for real-world robotics, especially within domains like imitation and reinforcement learning. It is a wrapper on top of Stanford paper ALOHA. Stanford ALOHA refers to a series of robotics systems, with the primary goal of creating low-cost, open-source hardware for robotics research. ALOHA initially started as a bimanual teleoperation system but has since evolved into Mobile ALOHA, which combines mobility with advanced whole-body manipulation capabilities. Mobile ALOHA is designed to perform complex real-world tasks like cooking, cleaning, and navigating environments, making it useful for research in areas such as imitation learning and human-robot interaction.</p>
+
+<p>The deliverable from this project is to pick and place recycled phones.</p>
+
+<p><img src="/assets/img/gary-lerobot1.jpg" alt="" /></p>
+
+<p><img src="/assets/img/gary-lerobot2.jpg" alt="" /></p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p><img src="/assets/img/gary-lerobot3.jpg" alt="" /></p>
+
+<p>The robot arms are built based on koch 1.1 version.</p>
+
+<p>After the data collection and training the final result is</p>
+
+<iframe type="text/html" width="100%" height="385" src="https://youtu.be/BNLq1-376q4" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview]]></summary></entry><entry><title type="html">Google Summer Of Code 2022 Report</title><link href="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html" rel="alternate" type="text/html" title="Google Summer Of Code 2022 Report" /><published>2022-09-10T00:00:00+00:00</published><updated>2022-09-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/gsoc-2022-report</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html"><![CDATA[<h2 id="overview">Overview</h2>
 <p>Over the past three months, I have had the valuable opportunity of contributing to an OpenCV open source project as a part of GSoC 2022. The main goal of this project was to create a cost-effective vision system for teams competing in the FIRST Robotics Competition by using the OpenCV DepthAI/OAK-D platform. Through this project, OAK-D can begin to be part of a solution to reduce build time by providing a generic and proven vision solution for all types of robots.</p>
 
 <h2 id="goals">Goals</h2>
@@ -513,77 +559,4 @@ In real world applications, we usually need to convert the pose of objects in th
 <h2 id="video-links">Video Links</h2>
 
 <p>Here is the video of what has been achieved with UR5 Pick and Place demo</p>
-<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/TwaLIdFVCtQ" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview I have been selected to participate a research project by a renewable smartphone company to develop the next generation robot automation system for renewable smart phones. The goal is to use Universal Robot UR-5e to automate the renewable electronics in warehouse. The challenge When talking about industrial robotics , we tend to think about robots in car factories or carrying out construction tasks. However, this one is to improve the processing speed and make the old phones to be reused. The solution is to use robotic arms which are able to identify, grip and move waste materials intended for recycling.]]></summary></entry><entry><title type="html">Eco-Friendly Farm Robot PoC Part 1</title><link href="https://h2o-ac.pages.dev/tech/opencv-rover-part1.html" rel="alternate" type="text/html" title="Eco-Friendly Farm Robot PoC Part 1" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/opencv-rover-part1</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/opencv-rover-part1.html"><![CDATA[<h2 id="introduction">Introduction</h2>
-
-<p>Autonomous mobile robots can be incorporated into a variety of applications, ranging from logistics and maintenance, to intelligence gathering and surveillance. The goal of this research is to prototype and demonstrate the autonomous capabilities for a farm environment.</p>
-
-<p>This project started as a OpenCV sponsored project to promote the low cost Farm robot technologies to help the small farmers to save cost and improve efficiency.  One of the difficulties with robotics is that it usually requires intricate knowledge of hardware level details and expensive sensors in order to even begin developing robotic systems. Whether it’s communicating with motor controllers, utilizing servos,interfacing with sensors or implementing hardware acceleration for improved computing, learning robotics often requires graduate level knowledge of these topics with expensive Lidar hardware. This means that some robotics topics and capability can be out of reach for most farm users, due to its steep learning curve and cost. Besides that these robot are not eco-friendly as they consume more energy to achieve even simple work.</p>
-
-<p>This project is aimed to provide solution with low-cost hardware. We are using the Traxxas X-MAXX 1:5 scale RC car as the platform to demonstrate the autonomous features. The autonomous software stack is composed of a Jetson Xavier and a Pixhawk. Interfacing with Pixhawk FC hardware is achieved by means of MAVROS. MAVROS provides a mechanism for opening the serial port for sending and receiving MAVLink packets to and from the Pixhawk. On the Jetson computer this is typically carried out through a Universal Asynchronous Receiver-Transmitter (UART) interface, but can also be accomplished by means of a Universal Serial Bus (USB) to serial converter. At the other end of the communication link, the connection is completed at the Pixhawk’s TELEM2 port, which is intended for this purpose of exchanging MAVLink packets with a companion computer. Setup of this interface requires selecting the appropriate baud rate, or data transfer rate, typically 921,600 bits per second.</p>
-
-<p><img src="/assets/img/pixhawk.png" alt="" /></p>
-
-<p>The steering and throttle were controlled by a Pixhawk flight controller. Sensors include a LiDAR, depth camera, tracking camera, and an IMU. Using existing ROS packages such as Cartographer and TEB planner, we implemented ROS nodes for accomplishing the below tasks.</p>
-
-<h2 id="milestones">Milestones</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Design Rover hardware BOM and assembly a few Chassis
-2. Setup Rover software and make a autonomous drive with GNSS RTK
-3. Integrate the data flow framework with ODD person detector
-4. DepthAI Oak-D integration to achieve the OOD person detector
-5. DepthAI Oak-D integration to achieve Obstacle Avoidance
-</code></pre></div></div>
-
-<h2 id="research-areas">Research Areas</h2>
-
-<ol>
-  <li>Study the SLAM based on laser rangefinder in outdoor environment</li>
-  <li>Integrate multiple sensors onto an autonomous rover</li>
-  <li>Implement sensory data processing and obstacles avoidance</li>
-  <li>Develop planning algorithms so that the vehicles can react to new obstacles and change their trajectories in real time</li>
-  <li>Verify the functionality of the resulting system in real environment</li>
-</ol>
-
-<h2 id="video-links">Video Links</h2>
-
-<p><img src="/assets/img/farm_rover_team1.jpg" alt="" />
-<em>Team worked on GPS RTK issues</em></p>
-
-<p><img src="/assets/img/farm_rover_team2.jpg" alt="" />
-<em>Team worked on GPS RTK issues</em></p>
-
-<p><img src="/assets/img/garyding_xmaxx_working.jpg" alt="" />
-<em>Gary worked on ROS topic to send Mavlink message Pixhawk</em></p>
-
-<p><img src="/assets/img/garyding_bk3.jpg" alt="" />
-<em>Tested global planner on Evergreen College</em></p>
-
-<h2 id="rover-setup">Rover Setup</h2>
-<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/_r4b08d2SfI" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Java" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">Eco-Friendly Farm Robot PoC Part 2</title><link href="https://h2o-ac.pages.dev/tech/opencv-rover-part2.html" rel="alternate" type="text/html" title="Eco-Friendly Farm Robot PoC Part 2" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/opencv-rover-part2</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/opencv-rover-part2.html"><![CDATA[<h2 id="navigation">Navigation</h2>
-
-<p>Agricultural robots are widely used nowadays to provide people with an alternative solution to conduct repetitive and high-risk operations in many indoor and outdoor agricultural environments. However, the ability of agricultural robots to navigate or move autonomously has always been a challenge due to the complexity of agricultural environments, especially the Global Positioning System (GPS)-denied environment. Localization, mapping, path planning and obstacle avoidance are the essential capabilities for robots to navigate from the starting point to the destination autonomously and successfully. Among them, localizing accurately and generating a globally consistent map of the surroundings in real-time are critical tasks to improve the performance of agricultural robots. Therefore, it is crucial to propose an efficient and accurate real-time localization and mapping method to meet the needs of autonomous navigation in agricultural environments</p>
-
-<p>SLAM is concerned with the problem of building a map of an unknown environment by a mobile robot while at the same time localizing the robot relative to the map. SLAM consists of multiple parts: Landmark extraction, data association, state estimation and land- marks update. Each part can be solved by different way and there is a huge amount of different hardware that can be used. The main part of the SLAM process is extended Kalman filter (EKF), which always holds the current estimated position.</p>
-
-<p>For the positioning and localization of the rover we use Real Time Kinematic (RTK) GPS. It’s a technique used to enhance the precision of position data from satellite-based positioning systems such as GPS, GLONASS or Galileo. It uses measurements of the phase of the signal carrier wave, rather than the information content of the signal, and it provides centimeter-level accuracy</p>
-
-<p>We obtain data from the surroundings around the robot from a light detection and ranging device (LiDAR). It uses light in the form of a pulsed laser to measure range of objects around and produces thousands of points per seconds. These points usually also carry some additional information such as their intensity or a number of return. With these information we should be able to generate three-dimensional model of the environment and also its surface characteristics [8].</p>
-
-<p><img src="/assets/img/rplidar-s2.png" alt="" />
-<em>The initial lidar model this project evaluated</em></p>
-
-<p>The third and also the last absolutely necessary sensor is an Inertial measurement unit (IMU). It is attached to LiDAR and tells us, how LiDAR is positioned at the moment. Points produced by LiDAR are relative to its centre at the time of the measurement, points produced by RTK GPS are relative to base (Chap. 3.3]), and IMU measurements are relative to IMU initial position. These measurement must be transformed into common coordinate system in order to perform calculations upon them.</p>
-
-<p>By using these three sensors and combining them together we can explicitly create 3D maps (point clouds) in real time. We should also be able to navigate in them and also know our location at every moment.</p>
-
-<p><img src="/assets/img/garyding_xmaxx_parking.jpg" alt="" />
-<em>Gary was testing the autonomous drive in parking lot</em></p>
-
-<p><img src="/assets/img/gary_xmaxx_demo.jpg" alt="" />
-<em>OpenCV Founder Gary Bradski and teams were on the demo field</em></p>
-
-<h2 id="video-links">Video Links</h2>
-
-<p>Rover Setup</p>
-<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/rqqbVXaiuio" frameborder="0"></iframe>
-
-<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/u-RKHTTs0DY" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Java" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Navigation]]></summary></entry></feed>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/TwaLIdFVCtQ" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview I have been selected to participate a research project by a renewable smartphone company to develop the next generation robot automation system for renewable smart phones. The goal is to use Universal Robot UR-5e to automate the renewable electronics in warehouse. The challenge When talking about industrial robotics , we tend to think about robots in car factories or carrying out construction tasks. However, this one is to improve the processing speed and make the old phones to be reused. The solution is to use robotic arms which are able to identify, grip and move waste materials intended for recycling.]]></summary></entry></feed>
