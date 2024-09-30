@@ -9,7 +9,7 @@ cover_author_link: 'https://unsplash.com/@colinandmeg'
 
 # About me
 
-&emsp;&emsp;Hello! I’m Gary, a 19-year-old sophomore majoring in Computer Science and Environmental Science at Dartmouth College, originally from San Jose, California. My journey with robotics began eight years ago when I first participated in FTC (First Tech Challenge) competitions, which sparked a deep interest in intelligent robots. During high school and college, I interned at a robotics company where I worked on projects involving papers from Stanford, including replication work on ALOHA and UMI. My tasks ranged from software debugging to data collection and optimization. Through my work, I aim to apply these skills to address environmental challenges. Feel free to explore my projects on this site! 
+&emsp;&emsp;Hello! I’m Gary, a 19-year-old sophomore majoring in Computer Science and Environmental Science at Dartmouth College, originally from San Jose, California. My journey with robotics began eight years ago when I first participated in FTC (First Tech Challenge) competitions, which sparked a deep interest in intelligent robots. During high school and college, I interned at a robotics company where I worked on projects involving papers from Stanford, including replication work on ALOHA and UMI. My tasks ranged from software debugging to data collection and optimization. Through my work, I aim to apply these skills to address environmental challenges. Feel free to explore my projects on this site! You can reach me at [garyding5678 [at] gmail [dot] com].
 
 # Internships
 
@@ -22,8 +22,10 @@ cover_author_link: 'https://unsplash.com/@colinandmeg'
 
 # Projects
 
-1. [OpenCV Farm Robot](tech/opencv-rover-part1.html)
-2. [Smart Sorting Trash Can](tech/trashcan-makerfair.html)
+1. [OpenCV Farm Robot 2021](tech/opencv-rover-part1.html)
+2. [Smart Sorting Trash Can 2019](tech/trashcan-makerfair.html)
+3. [Univeral Manipulation Interface 2023](tech/umi-part1.html)
+4. [Lerobot Aloha 2024](tech/lerobot.html)
 
 
 # Robotics Teams
