@@ -5,8 +5,8 @@
     <description>A personal technical blog for some interesting things in the learning process</description>
     <link>https://h2o-ac.pages.dev//</link>
     <atom:link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 30 Sep 2024 00:18:17 +0000</pubDate>
-    <lastBuildDate>Mon, 30 Sep 2024 00:18:17 +0000</lastBuildDate>
+    <pubDate>Mon, 30 Sep 2024 00:30:14 +0000</pubDate>
+    <lastBuildDate>Mon, 30 Sep 2024 00:30:14 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -21,25 +21,22 @@
 
 &lt;p&gt;First I downloaded the original model&lt;/p&gt;
 
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtube.com/shorts/PKQV8KJgFq8?feature=share&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
 &lt;p&gt;then I collected 50 samples&lt;/p&gt;
 
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtu.be/aLj_dE-MMGo&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/aLj_dE-MMGo&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;and the results are&lt;/p&gt;
 
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtube.com/shorts/WUKvjjuD0h0?feature=share&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/WUKvjjuD0h0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;then I adjusted the environment and collected 200 samples and the result is&lt;/p&gt;
 
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtube.com/shorts/RA8jz3u729M?feature=share&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/RA8jz3u729M&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtu.be/iCHoXkndNiE&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/aX9tZiq7xyw&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtu.be/aX9tZiq7xyw&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/KtYa5oRys5Q&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtu.be/KtYa5oRys5Q&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
         <link>https://h2o-ac.pages.dev/tech/umi-part1.html</link>
@@ -64,8 +61,6 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/gary-lerobot1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/gary-lerobot2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
 &lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/gary-lerobot3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -74,7 +69,7 @@
 
 &lt;p&gt;After the data collection and training the final result is&lt;/p&gt;
 
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://youtu.be/BNLq1-376q4&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/BNLq1-376q4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 </description>
         <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>

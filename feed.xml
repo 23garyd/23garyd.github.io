@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://h2o-ac.pages.dev/" rel="alternate" type="text/html" /><updated>2024-09-30T00:18:17+00:00</updated><id>https://h2o-ac.pages.dev/feed.xml</id><title type="html">Gary Ding</title><subtitle>A personal technical blog for some interesting things in the learning process</subtitle><author><name>gary ding</name></author><entry><title type="html">Universal Manipulation Interface</title><link href="https://h2o-ac.pages.dev/tech/umi-part1.html" rel="alternate" type="text/html" title="Universal Manipulation Interface" /><published>2024-09-15T00:00:00+00:00</published><updated>2024-09-15T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/umi-part1</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/umi-part1.html"><![CDATA[<h2 id="overview">Overview</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://h2o-ac.pages.dev/" rel="alternate" type="text/html" /><updated>2024-09-30T00:30:14+00:00</updated><id>https://h2o-ac.pages.dev/feed.xml</id><title type="html">Gary Ding</title><subtitle>A personal technical blog for some interesting things in the learning process</subtitle><author><name>gary ding</name></author><entry><title type="html">Universal Manipulation Interface</title><link href="https://h2o-ac.pages.dev/tech/umi-part1.html" rel="alternate" type="text/html" title="Universal Manipulation Interface" /><published>2024-09-15T00:00:00+00:00</published><updated>2024-09-15T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/umi-part1</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/umi-part1.html"><![CDATA[<h2 id="overview">Overview</h2>
 
 <p>This project began as research project for automated the recycle process in warehouse.</p>
 
@@ -8,33 +8,27 @@
 
 <p>First I downloaded the original model</p>
 
-<iframe type="text/html" width="100%" height="385" src="https://youtube.com/shorts/PKQV8KJgFq8?feature=share" frameborder="0"></iframe>
-
 <p>then I collected 50 samples</p>
 
-<iframe type="text/html" width="100%" height="385" src="https://youtu.be/aLj_dE-MMGo" frameborder="0"></iframe>
+<iframe width="100%" height="385" src="https://www.youtube.com/embed/aLj_dE-MMGo" frameborder="0" allowfullscreen=""></iframe>
 
 <p>and the results are</p>
 
-<iframe type="text/html" width="100%" height="385" src="https://youtube.com/shorts/WUKvjjuD0h0?feature=share" frameborder="0"></iframe>
+<iframe width="100%" height="385" src="https://www.youtube.com/embed/WUKvjjuD0h0" frameborder="0" allowfullscreen=""></iframe>
 
 <p>then I adjusted the environment and collected 200 samples and the result is</p>
 
-<iframe type="text/html" width="100%" height="385" src="https://youtube.com/shorts/RA8jz3u729M?feature=share" frameborder="0"></iframe>
+<iframe width="100%" height="385" src="https://www.youtube.com/embed/RA8jz3u729M" frameborder="0" allowfullscreen=""></iframe>
 
-<iframe type="text/html" width="100%" height="385" src="https://youtu.be/iCHoXkndNiE" frameborder="0"></iframe>
+<iframe width="100%" height="385" src="https://www.youtube.com/embed/aX9tZiq7xyw" frameborder="0" allowfullscreen=""></iframe>
 
-<iframe type="text/html" width="100%" height="385" src="https://youtu.be/aX9tZiq7xyw" frameborder="0"></iframe>
-
-<iframe type="text/html" width="100%" height="385" src="https://youtu.be/KtYa5oRys5Q" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview]]></summary></entry><entry><title type="html">LeRobot</title><link href="https://h2o-ac.pages.dev/tech/lerobot.html" rel="alternate" type="text/html" title="LeRobot" /><published>2024-06-15T00:00:00+00:00</published><updated>2024-06-15T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/lerobot</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/lerobot.html"><![CDATA[<h2 id="overview">Overview</h2>
+<iframe width="100%" height="385" src="https://www.youtube.com/embed/KtYa5oRys5Q" frameborder="0" allowfullscreen=""></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview]]></summary></entry><entry><title type="html">LeRobot</title><link href="https://h2o-ac.pages.dev/tech/lerobot.html" rel="alternate" type="text/html" title="LeRobot" /><published>2024-06-15T00:00:00+00:00</published><updated>2024-06-15T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/lerobot</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/lerobot.html"><![CDATA[<h2 id="overview">Overview</h2>
 
 <p>This project began as research project for automated the recycle process in warehouse. Hugging Face’s LeRobot project is an open source project on machine learning models for real-world robotics, especially within domains like imitation and reinforcement learning. It is a wrapper on top of Stanford paper ALOHA. Stanford ALOHA refers to a series of robotics systems, with the primary goal of creating low-cost, open-source hardware for robotics research. ALOHA initially started as a bimanual teleoperation system but has since evolved into Mobile ALOHA, which combines mobility with advanced whole-body manipulation capabilities. Mobile ALOHA is designed to perform complex real-world tasks like cooking, cleaning, and navigating environments, making it useful for research in areas such as imitation learning and human-robot interaction.</p>
 
 <p>The deliverable from this project is to pick and place recycled phones.</p>
 
 <p><img src="/assets/img/gary-lerobot1.jpg" alt="" /></p>
-
-<p><img src="/assets/img/gary-lerobot2.jpg" alt="" /></p>
 
 <h2 id="implementation">Implementation</h2>
 
@@ -44,7 +38,7 @@
 
 <p>After the data collection and training the final result is</p>
 
-<iframe type="text/html" width="100%" height="385" src="https://youtu.be/BNLq1-376q4" frameborder="0"></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview]]></summary></entry><entry><title type="html">Google Summer Of Code 2022 Report</title><link href="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html" rel="alternate" type="text/html" title="Google Summer Of Code 2022 Report" /><published>2022-09-10T00:00:00+00:00</published><updated>2022-09-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/gsoc-2022-report</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html"><![CDATA[<h2 id="overview">Overview</h2>
+<iframe width="100%" height="385" src="https://www.youtube.com/embed/BNLq1-376q4" frameborder="0" allowfullscreen=""></iframe>]]></content><author><name>Gary Ding</name></author><category term="tech" /><category term="Python" /><category term="Linux" /><summary type="html"><![CDATA[Overview]]></summary></entry><entry><title type="html">Google Summer Of Code 2022 Report</title><link href="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html" rel="alternate" type="text/html" title="Google Summer Of Code 2022 Report" /><published>2022-09-10T00:00:00+00:00</published><updated>2022-09-10T00:00:00+00:00</updated><id>https://h2o-ac.pages.dev/tech/gsoc-2022-report</id><content type="html" xml:base="https://h2o-ac.pages.dev/tech/gsoc-2022-report.html"><![CDATA[<h2 id="overview">Overview</h2>
 <p>Over the past three months, I have had the valuable opportunity of contributing to an OpenCV open source project as a part of GSoC 2022. The main goal of this project was to create a cost-effective vision system for teams competing in the FIRST Robotics Competition by using the OpenCV DepthAI/OAK-D platform. Through this project, OAK-D can begin to be part of a solution to reduce build time by providing a generic and proven vision solution for all types of robots.</p>
 
 <h2 id="goals">Goals</h2>
