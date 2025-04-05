@@ -9,7 +9,7 @@ cover_author_link: 'https://unsplash.com/@colinandmeg'
 
 # About me
 
-&emsp;&emsp;Hello! I’m Gary, a in Computer Science and Environmental Science double major at Dartmouth College, originally from San Jose, California. My journey with robotics began eight years ago when I first participated in FTC (First Tech Challenge) competitions, which sparked a deep interest in intelligent robots. During high school and college, I interned at a robotics company where I worked on projects involving UR5 python control, and replication work on Standford ALOHA and UMI projects. My tasks ranged from software debugging to data collection and optimization. Feel free to explore my projects on this site! You can reach me at [garyding5678 [at] gmail [dot] com].
+Hello! I'm Gary, a in Computer Science and Environmental Science double major at Dartmouth College, originally from San Jose, California. My journey with robotics began eight years ago when I first participated in FTC (First Tech Challenge) competitions, which sparked a deep interest in intelligent robots. During high school and college, I interned at a robotics company where I worked on projects involving UR5 python control, and replication work on Standford ALOHA and UMI projects. My tasks ranged from software debugging to data collection and optimization. Feel free to explore my projects on this site! You can reach me at [garyding5678 [at] gmail [dot] com].
 
 # Internships
 
