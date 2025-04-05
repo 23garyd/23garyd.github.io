@@ -1,7 +1,7 @@
 ---
 layout: page
 home-title: Gary Ding 
-description: Environmental Maker (In Progress)
+description: Robot Maker
 cover: '/assets/img/garyding_bk5.jpg'
 cover_author: 'Colin + Meg'
 cover_author_link: 'https://unsplash.com/@colinandmeg'
@@ -24,7 +24,7 @@ cover_author_link: 'https://unsplash.com/@colinandmeg'
 
 1. [OpenCV Farm Robot 2021](tech/opencv-rover-part1.html)
 2. [Smart Sorting Trash Can 2019](tech/trashcan-makerfair.html)
-3. [Univeral Manipulation Interface 2023](tech/umi-part1.html)
+3. [Univeral Manipulation Interface 2024](tech/umi-part1.html)
 4. [Lerobot Aloha 2024](tech/lerobot.html)
 
 
