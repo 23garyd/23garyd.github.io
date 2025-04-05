@@ -9,7 +9,7 @@ cover_author_link: 'https://unsplash.com/@colinandmeg'
 
 # About me
 
-&emsp;&emsp;Hello! I’m Gary, a 19-year-old sophomore majoring in Computer Science and Environmental Science at Dartmouth College, originally from San Jose, California. My journey with robotics began eight years ago when I first participated in FTC (First Tech Challenge) competitions, which sparked a deep interest in intelligent robots. During high school and college, I interned at a robotics company where I worked on projects involving papers from Stanford, including replication work on ALOHA and UMI. My tasks ranged from software debugging to data collection and optimization. Through my work, I aim to apply these skills to address environmental challenges. Feel free to explore my projects on this site! You can reach me at [garyding5678 [at] gmail [dot] com].
+&emsp;&emsp;Hello! I’m Gary, a in Computer Science and Environmental Science double major at Dartmouth College, originally from San Jose, California. My journey with robotics began eight years ago when I first participated in FTC (First Tech Challenge) competitions, which sparked a deep interest in intelligent robots. During high school and college, I interned at a robotics company where I worked on projects involving UR5 python control, and replication work on Standford ALOHA and UMI projects. My tasks ranged from software debugging to data collection and optimization. Feel free to explore my projects on this site! You can reach me at [garyding5678 [at] gmail [dot] com].
 
 # Internships
 
@@ -35,9 +35,9 @@ cover_author_link: 'https://unsplash.com/@colinandmeg'
 
 # Skills
 
-- Java, Python, ML
+- Java, Python
 - RoboDK simulation, Universal Robot Script
 - Pixhawk, Ardupilot, Robot Kinematics 
 - OpenCV , TensorFlow/Neural Network
-- Transformer, LLM
+- Transformer
 
