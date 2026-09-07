@@ -3,8 +3,8 @@ version: 1.1.12
 
 # Site settings 配置站点
 title: 'Gary Ding'
-description: '个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。'
-keyword: 'python,java,ML'
+description: 'Gary Ding — agents that act on physical systems: robotics, GeoAI, and geospatial decision support.'
+keyword: 'Gary Ding, robotics, GeoAI, geospatial, ROS 2, LLM agents, Dartmouth'
 url: '' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
@@ -20,16 +20,16 @@ baseurl: ''
 # Github
 github:
   enabled: true
-  owner: zhonger
-  repository: jekyll-theme-H2O-ac
+  owner: 23garyd
+  repository: 23garyd.github.io
 
 # PWA
 pwa:
   color: '#81BBFF'
-  short_name: 'lisz'
+  short_name: 'Gary Ding'
 
 # International
-language: zh-cn
+language: en
 
 # Navigation links
 nav:
@@ -56,9 +56,9 @@ footer:
   since: 2021
 
 # Author 配置博主信息
-author: 'gary ding'
+author: 'Gary Ding'
 nickname: '23garyd'
-bio: 'Python, Java, ML'
+bio: 'Robotics · GeoAI · Geospatial decision support'
 avatar: '/assets/img/profile.webp'
 
 # Search
@@ -90,12 +90,9 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  # google-scholar: 'https://scholar.google.com/citations?user=AUupIooAAAAJ'
-  # researchgate: 'https://www.researchgate.net/profile/Shengzhou-Li'
-  # ORCID: 'https://orcid.org/0000-0001-6973-3825'
-  # github: 'https://github.com/zhonger'
-  # linkedin: 'https://www.linkedin.com/in/shengzhouli/'
-  # segmentfault: 'https://segmentfault.com/u/wuwozhonger'
+  ORCID: 'https://orcid.org/0009-0008-6805-6461'
+  github: 'https://github.com/23garyd'
+  linkedin: 'https://www.linkedin.com/in/gary-ding-6ba10a201'
 
 # Links 友情链接
 links:
