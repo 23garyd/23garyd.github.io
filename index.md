@@ -31,7 +31,7 @@ Reach me at garyding5678 [at] gmail [dot] com — or on [GitHub](https://github.
 # Projects
 
 1. **[NKSK Green Fuel Break planning tool](https://23garyd.github.io/nksk-fuelbreak-tool/)** (2026) — client-side planning tool; full scenario state encoded in the URL hash, so a plan is a link. [Pipeline](https://github.com/23garyd/NKSK-greenbreaks) · [tool source](https://github.com/23garyd/nksk-fuelbreak-tool)
-2. **RoundaboutDesigner** (2026) — an ArcGIS Pro add-in (C#/.NET 8) that sites and types roundabouts anywhere in the US from a natural-language request: an 11-tool agent loop over TIGER, OSM/Overpass, ACS, HPMS and FARS, with RAG-retrieved FHWA guidance behind every recommendation.
+2. **[RoundaboutDesigner](https://github.com/23garyd/RoundaboutDesigner)** (2026) — an ArcGIS Pro add-in (C#/.NET 8) that screens every intersection in any U.S. city for roundabout conversion: open-data pipelines over OSM/Overpass, HPMS, FARS, NSI and ACS, five-criterion scoring, FHWA-based type and cost estimates, and an 11-tool Gemini assistant grounded in FHWA guidance through RAG.
 3. **[Isaac Sim to ROS 2 Nav2 for a Unitree Go2](https://github.com/23garyd/isaacSim-go2-humble)** (2026) — Isaac Sim 4.5 and Isaac Lab on RTX-50-series hardware under Ubuntu 22.04, bridged to ROS 2 Humble navigation.
 4. **[ROS 2 navigation stacks in C++](https://github.com/23garyd/tracer-mini-ros2)** (2026) — FAST-LIO localization, rolling-costmap Nav2, AMCL tuning, and a mission wrapper on a versioned robot-interface contract.
 5. **[Universal Manipulation Interface](tech/umi-part1.html)** (2024) — Stanford's UMI with a diffusion-policy controller, applied to warehouse reverse logistics.
